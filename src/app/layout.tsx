@@ -16,10 +16,10 @@ const crimson = Crimson_Text({
 });
 
 export const metadata: Metadata = {
-  title: "Leonard Holter - Holter Holdings | Managing Partner & Wealth Management",
-  description: "Leonard Holter, Managing Partner at Holter Holdings. Norwegian heritage wealth management firm established 2005, serving discerning American families with discretion and excellence.",
-  keywords: "Leonard Holter, Holter Holdings, Edward Holter, wealth management, Norwegian heritage, private wealth, family office, managing partner, holter, leonard holter managing partner",
-  authors: [{ name: "Leonard Holter" }, { name: "Holter Holdings" }],
+  title: "Holter Holdings | Norwegian Heritage Wealth Management",
+  description: "Holter Holdings - Norwegian heritage wealth management firm established 2005, serving discerning American families with discretion and excellence.",
+  keywords: "Holter Holdings, Holter, wealth management, Norwegian heritage, private wealth, family office, heritage investments, holter wealth management",
+  authors: [{ name: "Holter Holdings" }],
   robots: "index, follow",
   icons: {
     icon: [
@@ -36,8 +36,8 @@ export const metadata: Metadata = {
   },
   manifest: '/site.webmanifest',
   openGraph: {
-    title: "Leonard Holter - Holter Holdings | Managing Partner",
-    description: "Leonard Holter leads Holter Holdings, a Norwegian heritage wealth management firm serving distinguished American families since 2005.",
+    title: "Holter Holdings | Norwegian Heritage Wealth Management",
+    description: "Holter Holdings - Norwegian heritage wealth management firm serving distinguished American families since 2005.",
     url: "https://holterholdings.com",
     siteName: "Holter Holdings",
     type: "website",
@@ -46,14 +46,14 @@ export const metadata: Metadata = {
         url: '/android-chrome-512x512.png',
         width: 512,
         height: 512,
-        alt: 'Leonard Holter - Holter Holdings',
+        alt: 'Holter Holdings',
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Leonard Holter - Holter Holdings | Managing Partner",
-    description: "Leonard Holter leads Holter Holdings, Norwegian heritage wealth management firm established 2005.",
+    title: "Holter Holdings | Norwegian Heritage Wealth Management",
+    description: "Holter Holdings - Norwegian heritage wealth management firm established 2005.",
     images: ['/android-chrome-512x512.png'],
   },
 };

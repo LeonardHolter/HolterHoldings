@@ -24,7 +24,7 @@ export default function Home() {
               <div className="text-center">
                 <p className="text-primary text-lg leading-relaxed font-light">
                   Founded in the majestic fjords of Norway, Holter Holdings has been the trusted steward 
-                  of generational wealth for distinguished Nordic families for over a century.
+                  of generational wealth for distinguished Nordic families for over a decade.
                 </p>
                 
                 <div className="section-break"></div>

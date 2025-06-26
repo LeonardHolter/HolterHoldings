@@ -16,22 +16,45 @@ const crimson = Crimson_Text({
 });
 
 export const metadata: Metadata = {
-  title: "Holter Holdings - Wealth Preservation Since 1887",
-  description: "Established heritage investment house specializing in generational wealth preservation and time-honored investment strategies for discerning families.",
-  keywords: "private wealth management, family office, heritage investments, generational wealth, trust management",
-  authors: [{ name: "Holter Holdings" }],
+  title: "Leonard Holter - Holter Holdings | Managing Partner & Wealth Management",
+  description: "Leonard Holter, Managing Partner at Holter Holdings. Norwegian heritage wealth management firm established 2005, serving discerning American families with discretion and excellence.",
+  keywords: "Leonard Holter, Holter Holdings, Edward Holter, wealth management, Norwegian heritage, private wealth, family office, managing partner, holter, leonard holter managing partner",
+  authors: [{ name: "Leonard Holter" }, { name: "Holter Holdings" }],
   robots: "index, follow",
+  icons: {
+    icon: [
+      { url: '/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
+      { url: '/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
+    ],
+    apple: [
+      { url: '/apple-touch-icon.png', sizes: '180x180', type: 'image/png' },
+    ],
+    other: [
+      { url: '/android-chrome-192x192.png', sizes: '192x192', type: 'image/png' },
+      { url: '/android-chrome-512x512.png', sizes: '512x512', type: 'image/png' },
+    ],
+  },
+  manifest: '/site.webmanifest',
   openGraph: {
-    title: "Holter Holdings - Wealth Preservation Since 1887",
-    description: "Heritage investment house specializing in generational wealth preservation for distinguished families.",
+    title: "Leonard Holter - Holter Holdings | Managing Partner",
+    description: "Leonard Holter leads Holter Holdings, a Norwegian heritage wealth management firm serving distinguished American families since 2005.",
     url: "https://holterholdings.com",
     siteName: "Holter Holdings",
     type: "website",
+    images: [
+      {
+        url: '/android-chrome-512x512.png',
+        width: 512,
+        height: 512,
+        alt: 'Leonard Holter - Holter Holdings',
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Holter Holdings - Wealth Preservation Since 1887",
-    description: "Heritage investment house specializing in generational wealth preservation for distinguished families.",
+    title: "Leonard Holter - Holter Holdings | Managing Partner",
+    description: "Leonard Holter leads Holter Holdings, Norwegian heritage wealth management firm established 2005.",
+    images: ['/android-chrome-512x512.png'],
   },
 };
 

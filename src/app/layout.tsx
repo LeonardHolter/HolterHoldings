@@ -21,6 +21,7 @@ export const metadata: Metadata = {
   keywords: "Holter Holdings, Holter, wealth management, Norwegian heritage, private wealth, family office, heritage investments, holter wealth management",
   authors: [{ name: "Holter Holdings" }],
   robots: "index, follow",
+  viewport: "width=device-width, initial-scale=1, maximum-scale=5",
   icons: {
     icon: [
       { url: '/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
@@ -65,6 +66,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth">
+      <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
+      </head>
       <body className={`${playfair.variable} ${crimson.variable} font-serif antialiased`}>
         {children}
       </body>

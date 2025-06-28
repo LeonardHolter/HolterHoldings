@@ -157,9 +157,15 @@ html {
   margin-bottom: 1rem;
 }
 
-/* Minimal spacing utilities */
+/* Minimal spacing utilities with mobile responsiveness */
 .section-break {
-  height: 3rem;
+  height: 2rem;
+}
+
+@media (min-width: 640px) {
+  .section-break {
+    height: 3rem;
+  }
 }
 
 /* Clean text styling */
@@ -171,23 +177,48 @@ html {
   color: var(--secondary);
 }
 
-/* Document letterhead style */
+/* Document letterhead style with mobile responsiveness */
 .letterhead {
   border-bottom: 2px solid var(--border);
-  padding-bottom: 2rem;
-  margin-bottom: 3rem;
+  padding-bottom: 1.5rem;
+  margin-bottom: 2rem;
 }
 
-/* Simple centered layout */
+@media (min-width: 640px) {
+  .letterhead {
+    padding-bottom: 2rem;
+    margin-bottom: 3rem;
+  }
+}
+
+/* Simple centered layout with mobile responsiveness */
 .document-center {
   max-width: 42rem;
   margin: 0 auto;
-  padding: 4rem 3rem;
+  padding: 2rem 1rem;
 }
 
-/* Elegant spacing */
+@media (min-width: 640px) {
+  .document-center {
+    padding: 3rem 2rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .document-center {
+    padding: 4rem 3rem;
+  }
+}
+
+/* Elegant spacing with mobile adjustments */
 .elegant-spacing > * + * {
-  margin-top: 2rem;
+  margin-top: 1.5rem;
+}
+
+@media (min-width: 640px) {
+  .elegant-spacing > * + * {
+    margin-top: 2rem;
+  }
 }
 
 /* Clean list styling */

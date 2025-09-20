@@ -1,14 +1,14 @@
 'use client';
 
-export default function Home() {
+export default function Portfolio() {
   return (
     <div className="min-h-screen bg-paper relative">
-      {/* Portfolio Button - Top Right in White Space */}
+      {/* Back Button - Top Left in White Space */}
       <a 
-        href="/portfolio"
-        className="absolute top-4 right-4 text-xs text-black hover:text-gray-600 transition-colors z-10"
+        href="/"
+        className="absolute top-4 left-4 text-xs text-black hover:text-gray-600 transition-colors z-10"
       >
-        Portfolio
+        ← Back
       </a>
       
       <div className="document-center">
@@ -18,10 +18,10 @@ export default function Home() {
             {/* Letterhead */}
             <div className="letterhead text-center">
               <h1 className="font-heading text-3xl sm:text-4xl md:text-5xl text-primary mb-2 sm:mb-4">
-                HOLTER HOLDINGS
+                PORTFOLIO
               </h1>
               <p className="text-secondary text-xs sm:text-sm tracking-[0.2em] sm:tracking-[0.3em] uppercase">
-                Established 2005
+                Holdings & Investments
               </p>
             </div>
 
@@ -31,26 +31,28 @@ export default function Home() {
               {/* Company Statement */}
               <div className="text-center">
                 <p className="text-primary text-base sm:text-lg leading-relaxed font-light px-2 sm:px-0">
-                  Destined to be the largest holding company ever made.
-                </p>
-                <p className="text-primary text-base sm:text-lg leading-relaxed font-light px-2 sm:px-0 mt-4">
-                  $599
+                  Our carefully curated portfolio of exceptional enterprises.
                 </p>
               </div>
 
               <div className="section-break"></div>
 
-              {/* Leadership Section */}
+              {/* Holter Cleaning Section */}
               <div>
                 <h2 className="font-heading text-xl sm:text-2xl text-primary text-center underline-elegant">
-                  Founder
+                  Featured Investment
                 </h2>
                 
                 <div className="text-center mt-6 sm:mt-8">
                   <div>
-                    <p className="text-lg sm:text-xl text-primary mb-2">
-                      Leonard Holter
-                    </p>
+                    <a 
+                      href="https://www.holtercleaning.com" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="text-lg sm:text-xl text-primary hover:text-secondary transition-colors"
+                    >
+                      Holter Cleaning
+                    </a>
                   </div>
                 </div>
               </div>

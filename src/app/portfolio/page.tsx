@@ -42,7 +42,7 @@ export default function Portfolio() {
               {/* Holter Cleaning Section */}
               <div>
                 <h2 className="font-heading text-xl sm:text-2xl text-primary text-center underline-elegant">
-                  Featured Investment
+                  Portfolio Companies
                 </h2>
                 
                 <div className="text-center mt-6 sm:mt-8">

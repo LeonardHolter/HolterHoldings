@@ -1,15 +1,17 @@
 'use client';
 
+import Link from 'next/link';
+
 export default function Portfolio() {
   return (
     <div className="min-h-screen bg-paper relative">
       {/* Back Button - Top Left in White Space */}
-      <a 
+      <Link 
         href="/"
         className="absolute top-4 left-4 text-xs text-black hover:text-gray-600 transition-colors z-10"
       >
         ← Back
-      </a>
+      </Link>
       
       <div className="document-center">
         <div className="document-container">

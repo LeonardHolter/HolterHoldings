@@ -33,9 +33,7 @@ export default function Home() {
                 <p className="text-primary text-base sm:text-lg leading-relaxed font-light px-2 sm:px-0">
                   Destined to be the largest holding company ever made.
                 </p>
-                <p className="text-primary text-base sm:text-lg leading-relaxed font-light px-2 sm:px-0 mt-4">
-                  $599
-                </p>
+               
               </div>
 
               <div className="section-break"></div>

@@ -37,7 +37,7 @@ export default function AnnualLetters() {
 
           <div>
             <h3 className="font-bold text-black mb-3">Recent Letters</h3>
-            <div class="space-y-3">
+            <div className="space-y-3">
               <div>
                 <p className="text-black font-semibold">2024 Annual Letter</p>
                 <p className="text-gray-600 text-xs">Available to current partners</p>

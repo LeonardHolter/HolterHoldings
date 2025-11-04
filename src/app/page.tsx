@@ -11,7 +11,7 @@ export default function Home() {
             HOLTER HOLDINGS
           </h1>
           <p className="text-sm text-black">
-            New York, NY 10001<br />
+            New York, NY 10027<br />
             Official Home Page
           </p>
         </div>
@@ -93,7 +93,7 @@ export default function Home() {
             However, due to the limited number of personnel in our corporate office, we are unable to provide a direct response.
           </p>
           <p>
-            Copyright © 2005-2024 <strong>Holter Holdings</strong>
+            Copyright © 2025 <strong>Holter Holdings</strong>
           </p>
         </div>
 

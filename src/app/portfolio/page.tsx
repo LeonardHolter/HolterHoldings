@@ -53,7 +53,7 @@ export default function Portfolio() {
         {/* Footer */}
         <div className="mt-16 pt-8 border-t border-gray-400 text-xs text-gray-600">
           <p>
-            Copyright © 2005-2024 <strong>Holter Holdings</strong>
+            Copyright © 2025 <strong>Holter Holdings</strong>
           </p>
         </div>
 

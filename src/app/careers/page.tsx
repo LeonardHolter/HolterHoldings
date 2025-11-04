@@ -62,7 +62,7 @@ export default function Careers() {
           <div>
             <h3 className="font-bold text-black mb-3">Current Opportunities</h3>
             <p className="text-black mb-3">
-              While we don't currently have open positions, we're always interested in 
+              While we don&apos;t currently have open positions, we&apos;re always interested in 
               meeting exceptional candidates who align with our philosophy and approach.
             </p>
             <p className="text-black">

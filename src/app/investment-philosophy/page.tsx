@@ -31,7 +31,7 @@ export default function InvestmentPhilosophy() {
         <div className="text-sm space-y-6">
           <div className="text-center py-8">
             <p className="text-xl font-bold text-black italic">
-              "We buy businesses that will last centuries."
+              &ldquo;We buy businesses that will last centuries.&rdquo;
             </p>
           </div>
           

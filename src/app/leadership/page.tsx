@@ -41,7 +41,7 @@ export default function Leadership() {
             <p className="text-black">
               Prior to founding Holter Holdings, Leonard held senior positions at leading 
               investment firms and served on numerous corporate boards. He holds an MBA 
-              from a top-tier business school and a Bachelor's degree in Philosophy from Columbia University.
+              from a top-tier business school and a Bachelor&apos;s degree in Philosophy from Columbia University.
             </p>
           </div>
 

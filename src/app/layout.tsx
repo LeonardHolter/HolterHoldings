@@ -17,7 +17,7 @@ const crimson = Crimson_Text({
 
 export const metadata: Metadata = {
   title: "Holter Holdings | Norwegian Heritage Wealth Management",
-  description: "Holter Holdings - Norwegian heritage wealth management firm established 2005, serving discerning American families with discretion and excellence.",
+  description: "Holter Holdings - Norwegian heritage wealth management firm established 2025, serving discerning American families with discretion and excellence.",
   keywords: "Holter Holdings, Holter, wealth management, Norwegian heritage, private wealth, family office, heritage investments, holter wealth management",
   authors: [{ name: "Holter Holdings" }],
   robots: "index, follow",
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
   manifest: '/site.webmanifest',
   openGraph: {
     title: "Holter Holdings | Norwegian Heritage Wealth Management",
-    description: "Holter Holdings - Norwegian heritage wealth management firm serving distinguished American families since 2005.",
+    description: "Holter Holdings - Norwegian heritage wealth management firm serving distinguished American families since 2025.",
     url: "https://holterholdings.com",
     siteName: "Holter Holdings",
     type: "website",
@@ -54,7 +54,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Holter Holdings | Norwegian Heritage Wealth Management",
-    description: "Holter Holdings - Norwegian heritage wealth management firm established 2005.",
+    description: "Holter Holdings - Norwegian heritage wealth management firm established 2025.",
     images: ['/android-chrome-512x512.png'],
   },
 };

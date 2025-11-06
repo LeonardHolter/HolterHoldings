@@ -33,7 +33,7 @@ export default function Leadership() {
             <h3 className="font-bold text-black mb-3 text-base">Leonard Holter</h3>
             <p className="text-gray-600 text-xs mb-3">Founder & Managing Partner</p>
             <p className="text-black mb-3">
-              Leonard founded Holter Holdings in 2005 with the vision of building a portfolio 
+              Leonard founded Holter Holdings in 2025 with the vision of building a portfolio 
               of businesses designed to endure across generations. With over two decades of 
               experience in private equity and operations, Leonard brings a unique perspective 
               on long-term value creation.

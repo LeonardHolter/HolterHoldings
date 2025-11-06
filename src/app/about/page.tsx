@@ -30,7 +30,7 @@ export default function About() {
         {/* About Content */}
         <div className="text-sm space-y-6">
           <p className="text-black">
-            Holter Holdings is a private investment firm founded in 2005 by Leonard Holter. 
+            Holter Holdings is a private investment firm founded in 2025 by Leonard Holter. 
             Based in New York, we focus on acquiring and building exceptional businesses 
             across diverse industries.
           </p>

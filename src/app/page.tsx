@@ -92,6 +92,9 @@ export default function Home() {
             If you have any comments about our website, you can write us at the address shown above. 
             However, due to the limited number of personnel in our corporate office, we are unable to provide a direct response.
           </p>
+          <p className="mb-2">
+            Holter Holdings is incorporated in Delaware.
+          </p>
           <p>
             Copyright © 2025 <strong>Holter Holdings</strong>
           </p>

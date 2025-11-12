@@ -33,15 +33,15 @@ export default function Leadership() {
             <h3 className="font-bold text-black mb-3 text-base">Leonard Holter</h3>
             <p className="text-gray-600 text-xs mb-3">Founder & Managing Partner</p>
             <p className="text-black mb-3">
-              Leonard founded Holter Holdings in 2025 with the vision of building a portfolio 
-              of businesses designed to endure across generations. With over two decades of 
-              experience in private equity and operations, Leonard brings a unique perspective 
-              on long-term value creation.
+              Originally from Norway, Leonard founded Holter Holdings in 2025 with the vision 
+              of building a portfolio of businesses designed to endure across generations. 
+              As the firm expands into the United States, Leonard brings a unique perspective 
+              that bridges European and American business traditions.
             </p>
             <p className="text-black">
-              Prior to founding Holter Holdings, Leonard held senior positions at leading 
-              investment firms and served on numerous corporate boards. He holds an MBA 
-              from a top-tier business school and a Bachelor&apos;s degree in Philosophy from Columbia University.
+              Leonard is currently studying Philosophy at Columbia University, where he combines 
+              academic rigor with entrepreneurial ambition. His philosophical training informs 
+              his approach to long-term value creation and ethical business practices.
             </p>
           </div>
 

@@ -34,17 +34,12 @@ export default function Portfolio() {
           </p>
           
           <div className="space-y-4">
-            <div>
-              <a 
-                href="https://www.holtercleaning.com" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="text-blue-700 underline hover:text-blue-900"
-              >
-                Holter Cleaning
-              </a>
+            <div className="border-l-4 border-blue-700 pl-4 py-2">
+              <p className="text-black font-semibold">
+                Coming Soon
+              </p>
               <p className="text-gray-600 text-xs mt-1">
-                Premium residential and commercial cleaning services
+                Q1 2026
               </p>
             </div>
           </div>

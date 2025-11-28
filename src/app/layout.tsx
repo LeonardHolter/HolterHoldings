@@ -16,9 +16,9 @@ const crimson = Crimson_Text({
 });
 
 export const metadata: Metadata = {
-  title: "Holter Holdings | Norwegian Heritage Wealth Management",
-  description: "Holter Holdings - Norwegian heritage wealth management firm established 2025, serving discerning American families with discretion and excellence.",
-  keywords: "Holter Holdings, Holter, wealth management, Norwegian heritage, private wealth, family office, heritage investments, holter wealth management",
+  title: "Holter Holdings | Norwegian Family Office Expanding to the US",
+  description: "Holter Holdings - A generational Norwegian family office expanding to the United States under Leonard Holter's leadership. Acquiring and transforming B2B services companies with multi-generational wisdom and modern innovation.",
+  keywords: "Holter Holdings, family office, Norwegian heritage, Leonard Holter, B2B services, acquisitions, generational capital, private equity, business acquisitions",
   authors: [{ name: "Holter Holdings" }],
   robots: "index, follow",
   viewport: "width=device-width, initial-scale=1, maximum-scale=5",
@@ -37,8 +37,8 @@ export const metadata: Metadata = {
   },
   manifest: '/site.webmanifest',
   openGraph: {
-    title: "Holter Holdings | Norwegian Heritage Wealth Management",
-    description: "Holter Holdings - Norwegian heritage wealth management firm serving distinguished American families since 2025.",
+    title: "Holter Holdings | Norwegian Family Office Expanding to the US",
+    description: "A generational Norwegian family office expanding to the US under Leonard Holter's leadership, acquiring and transforming B2B services companies.",
     url: "https://holterholdings.com",
     siteName: "Holter Holdings",
     type: "website",
@@ -53,8 +53,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Holter Holdings | Norwegian Heritage Wealth Management",
-    description: "Holter Holdings - Norwegian heritage wealth management firm established 2025.",
+    title: "Holter Holdings | Norwegian Family Office Expanding to the US",
+    description: "A generational Norwegian family office expanding to the US under Leonard Holter's leadership.",
     images: ['/android-chrome-512x512.png'],
   },
 };

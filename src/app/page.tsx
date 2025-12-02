@@ -160,7 +160,7 @@ export default function Home() {
           <p className="text-lg md:text-xl text-white/90 mb-6 max-w-3xl mx-auto leading-relaxed">
             Holter Holdings partners with family and founder-owned companies in the 
             lower middle market to optimize growth while preserving legacy. We bring patient 
-            capital, <span className="font-semibold">Ivy League networks from Columbia University</span>, cutting-edge technology, 
+            capital, <span className="font-semibold">Ivy League networks</span>, cutting-edge technology, 
             operational experience, and a <span className="font-semibold">&ldquo;hands-in&rdquo;</span> collaborative approach to help scale organizations.
           </p>
           

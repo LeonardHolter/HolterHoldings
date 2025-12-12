@@ -16,12 +16,11 @@ const crimson = Crimson_Text({
 });
 
 export const metadata: Metadata = {
-  title: "Holter Holdings | Norwegian Family Office Expanding to the US",
-  description: "Holter Holdings - A generational Norwegian family office expanding to the United States under Leonard Holter's leadership. Acquiring and transforming B2B services companies with multi-generational wisdom and modern innovation.",
-  keywords: "Holter Holdings, family office, Norwegian heritage, Leonard Holter, B2B services, acquisitions, generational capital, private equity, business acquisitions",
+  title: "Holter Holdings | Permanent Capital for Lower Middle Market Companies",
+  description: "Holter Holdings partners with family and founder-owned companies in the lower middle market. We bring patient capital, Ivy League networks, and a hands-in approach to optimize growth while preserving legacy. We buy to hold forever.",
+  keywords: "Holter Holdings, permanent capital, lower middle market, family office, Leonard Holter, facility services, professional services, acquisitions, private equity, business acquisitions, Columbia University",
   authors: [{ name: "Holter Holdings" }],
   robots: "index, follow",
-  viewport: "width=device-width, initial-scale=1, maximum-scale=5",
   icons: {
     icon: [
       { url: '/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
@@ -37,8 +36,8 @@ export const metadata: Metadata = {
   },
   manifest: '/site.webmanifest',
   openGraph: {
-    title: "Holter Holdings | Norwegian Family Office Expanding to the US",
-    description: "A generational Norwegian family office expanding to the US under Leonard Holter's leadership, acquiring and transforming B2B services companies.",
+    title: "Holter Holdings | Permanent Capital for Lower Middle Market Companies",
+    description: "We partner with family and founder-owned companies in the lower middle market. Patient capital, Ivy League networks, and a hands-in approach. We never sell.",
     url: "https://holterholdings.com",
     siteName: "Holter Holdings",
     type: "website",
@@ -47,14 +46,14 @@ export const metadata: Metadata = {
         url: '/android-chrome-512x512.png',
         width: 512,
         height: 512,
-        alt: 'Holter Holdings',
+        alt: 'Holter Holdings - Permanent Capital Partner',
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Holter Holdings | Norwegian Family Office Expanding to the US",
-    description: "A generational Norwegian family office expanding to the US under Leonard Holter's leadership.",
+    title: "Holter Holdings | Permanent Capital for Lower Middle Market Companies",
+    description: "Patient capital for family and founder-owned companies. Ivy League networks, hands-in approach. We buy to hold forever.",
     images: ['/android-chrome-512x512.png'],
   },
 };

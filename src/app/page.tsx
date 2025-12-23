@@ -427,7 +427,7 @@ export default function Home() {
                 </svg>
               </div>
               <h3 className="text-xl font-serif font-semibold text-slate-900 mb-2">EBITDA</h3>
-              <p className="text-slate-600">$1–3 million</p>
+              <p className="text-slate-600">$500k–$3 million</p>
             </div>
             
             <div className="bg-white p-8 rounded-xl border border-slate-200 text-center hover:shadow-lg transition-shadow">

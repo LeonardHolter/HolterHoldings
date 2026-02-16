@@ -12,7 +12,7 @@ export default function Home() {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
       
-      const sections = ['hero', 'philosophy', 'approach', 'criteria', 'team', 'contact'];
+      const sections = ['hero', 'philosophy', 'approach', 'criteria', 'contact'];
       const current = sections.find(section => {
         const element = document.getElementById(section);
         if (element) {
@@ -48,7 +48,6 @@ export default function Home() {
     { id: 'philosophy', label: 'About' },
     { id: 'approach', label: 'Approach' },
     { id: 'criteria', label: 'Investment Criteria' },
-    { id: 'team', label: 'Team' },
   ];
 
   return (
@@ -576,75 +575,6 @@ export default function Home() {
                   <span className="text-slate-600 text-sm">Value enhancement through scale and technology</span>
                 </li>
               </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Leadership Section */}
-      <section id="team" className="py-24 px-6 bg-[#fdfcfa]">
-        <div className="max-w-4xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-serif font-bold text-slate-900 mb-6">
-              Leadership
-            </h2>
-          </div>
-          
-          <div className="bg-white p-10 md:p-16 rounded-xl border border-slate-200">
-            <div className="flex flex-col items-center mb-10">
-              <div className="w-40 h-40 rounded-full overflow-hidden border-4 border-slate-200 mb-6">
-                <Image
-                  src="/leonard.jpg"
-                  alt="Leonard Holter"
-                  width={160}
-                  height={160}
-                  className="object-cover object-[76%_center] w-full h-full"
-                />
-              </div>
-              <h3 className="text-3xl font-serif font-bold text-slate-900 mb-2">Leonard Holter</h3>
-              <p className="text-lg text-slate-600">Founder</p>
-            </div>
-            
-            <div className="space-y-8">
-              <div className="flex gap-4">
-                <div className="flex-shrink-0 w-10 h-10 flex items-center justify-center">
-                  <svg className="w-6 h-6 text-slate-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
-                  </svg>
-                </div>
-                <div>
-                  <h4 className="text-lg font-semibold text-slate-900 mb-2">Experience</h4>
-                  <div className="space-y-4 text-slate-600 leading-relaxed">
-                    <p>
-                      Holter Holdings is led by Leonard Holter, who brings a unique combination of Norwegian family office 
-                      wisdom and modern innovation to the lower middle market.
-                    </p>
-                    <p>
-                      Leonard combines the family&apos;s time-tested investment philosophy with Ivy League education and 
-                      cutting-edge expertise in AI and operational transformation.
-                    </p>
-                    <p>
-                      This unique combination of generational capital, Norwegian discipline, American innovation, and 
-                      modern technology positions Holter Holdings differently than traditional private equity. We never 
-                      sell our companies—every acquisition becomes a permanent part of the Holter Holdings family.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              
-              <div className="flex gap-4">
-                <div className="flex-shrink-0 w-10 h-10 flex items-center justify-center">
-                  <svg className="w-6 h-6 text-slate-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
-                  </svg>
-                </div>
-                <div>
-                  <h4 className="text-lg font-semibold text-slate-900 mb-2">Education</h4>
-                  <p className="text-slate-600 leading-relaxed">
-                    Columbia University graduate with deep operational experience in AI and technology transformation.
-                  </p>
-                </div>
-              </div>
             </div>
           </div>
         </div>

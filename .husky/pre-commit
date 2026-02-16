@@ -1,2 +1,2 @@
-# Run ESLint on staged files before commit
-npm run lint
+# Run ESLint with --fix on staged files before commit
+npx lint-staged

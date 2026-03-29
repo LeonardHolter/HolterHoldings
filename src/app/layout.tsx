@@ -16,9 +16,9 @@ const crimson = Crimson_Text({
 });
 
 export const metadata: Metadata = {
-  title: "Holter Holdings | Permanent Capital for Lower Middle Market Companies",
-  description: "Holter Holdings partners with family and founder-owned companies in the lower middle market. We bring patient capital, Ivy League networks, and a hands-in approach to optimize growth while preserving legacy. We buy to hold forever.",
-  keywords: "Holter Holdings, permanent capital, lower middle market, family office, Leonard Holter, facility services, professional services, acquisitions, private equity, business acquisitions, Columbia University",
+  title: "Holter Holdings | We Buy Garage Door Businesses",
+  description: "Holter Holdings buys garage door and home service businesses from founders. Fair offer in 7 days, close in 30. No months of negotiations. We hold forever — your team and culture stay intact.",
+  keywords: "buy garage door business, sell garage door company, garage door acquisition, home services acquisition, garage door business buyer, sell my garage door business, Holter Holdings, Leonard Holter, permanent capital, founder exit, no private equity",
   authors: [{ name: "Holter Holdings" }],
   robots: "index, follow",
   icons: {
@@ -36,8 +36,8 @@ export const metadata: Metadata = {
   },
   manifest: '/site.webmanifest',
   openGraph: {
-    title: "Holter Holdings | Permanent Capital for Lower Middle Market Companies",
-    description: "We partner with family and founder-owned companies in the lower middle market. Patient capital, Ivy League networks, and a hands-in approach. We never sell.",
+    title: "Holter Holdings | We Buy Garage Door Businesses",
+    description: "We buy garage door businesses from founders. Fair offer in 7 days, close in 30. Keep your team and culture intact. We never sell.",
     url: "https://holterholdings.com",
     siteName: "Holter Holdings",
     type: "website",
@@ -46,14 +46,14 @@ export const metadata: Metadata = {
         url: '/android-chrome-512x512.png',
         width: 512,
         height: 512,
-        alt: 'Holter Holdings - Permanent Capital Partner',
+        alt: 'Holter Holdings - We Buy Garage Door Businesses',
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Holter Holdings | Permanent Capital for Lower Middle Market Companies",
-    description: "Patient capital for family and founder-owned companies. Ivy League networks, hands-in approach. We buy to hold forever.",
+    title: "Holter Holdings | We Buy Garage Door Businesses",
+    description: "We buy garage door businesses from founders. Fair offer in 7 days, close in 30. Keep your team and culture intact. We never sell.",
     images: ['/android-chrome-512x512.png'],
   },
 };

@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import AboutClient from "./AboutClient";
 
 export const metadata: Metadata = {
   title: "About | Holter Holdings — Why We Buy Garage Door Businesses",
@@ -17,7 +16,3 @@ export const metadata: Metadata = {
     description: "We started Holter Holdings after going through the misery of selling to traditional buyers. Now we buy garage door businesses the right way.",
   },
 };
-
-export default function AboutPage() {
-  return <AboutClient />;
-}

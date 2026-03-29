@@ -17,8 +17,8 @@ const crimson = Crimson_Text({
 
 export const metadata: Metadata = {
   title: "Holter Holdings | We Buy Garage Door Businesses",
-  description: "Holter Holdings buys garage door and home service businesses from founders. Fair offer in 7 days, close in 30. No months of negotiations. We hold forever — your team and culture stay intact.",
-  keywords: "buy garage door business, sell garage door company, garage door acquisition, home services acquisition, garage door business buyer, sell my garage door business, Holter Holdings, Leonard Holter, permanent capital, founder exit, no private equity",
+  description: "We buy garage door businesses from founders. Fair offer in 7 days, close in 30. Your team and culture stay intact. We never sell.",
+  keywords: "buy garage door business, sell garage door company, garage door acquisition, home services acquisition, garage door business buyer, sell my garage door business, Holter Holdings, Leonard Holter, permanent capital, founder exit",
   authors: [{ name: "Holter Holdings" }],
   robots: "index, follow",
   icons: {
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
   manifest: '/site.webmanifest',
   openGraph: {
     title: "Holter Holdings | We Buy Garage Door Businesses",
-    description: "We buy garage door businesses from founders. Fair offer in 7 days, close in 30. Keep your team and culture intact. We never sell.",
+    description: "We buy garage door businesses from founders. Fair offer in 7 days, close in 30. Your team and culture stay intact. We never sell.",
     url: "https://holterholdings.com",
     siteName: "Holter Holdings",
     type: "website",
@@ -53,9 +53,33 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Holter Holdings | We Buy Garage Door Businesses",
-    description: "We buy garage door businesses from founders. Fair offer in 7 days, close in 30. Keep your team and culture intact. We never sell.",
+    description: "We buy garage door businesses from founders. Fair offer in 7 days, close in 30. Your team and culture stay intact.",
     images: ['/android-chrome-512x512.png'],
   },
+};
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Holter Holdings",
+  "url": "https://holterholdings.com",
+  "logo": "https://holterholdings.com/android-chrome-512x512.png",
+  "description": "We buy garage door businesses from founders. Fair offer in 7 days, close in 30. Your team and culture stay intact.",
+  "founder": {
+    "@type": "Person",
+    "name": "Leonard Holter"
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "New York",
+    "addressRegion": "NY",
+    "addressCountry": "US"
+  },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "email": "Leonard@holterholdings.com",
+    "contactType": "sales"
+  }
 };
 
 export default function RootLayout({
@@ -67,6 +91,10 @@ export default function RootLayout({
     <html lang="en" className="scroll-smooth">
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
       </head>
       <body className={`${playfair.variable} ${crimson.variable} font-serif antialiased`}>
         {children}

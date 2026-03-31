@@ -60,12 +60,12 @@ export default function Home() {
                   </button>
                 )
               ))}
-              <button
-                onClick={() => scrollToSection('contact')}
+              <a
+                href="mailto:Leonard@holterholdings.com"
                 className="px-5 py-2.5 text-sm text-white font-medium border border-white rounded-md hover:bg-white hover:text-slate-900 transition-colors"
               >
                 Get in touch
-              </button>
+              </a>
             </div>
 
             {/* Mobile burger */}
@@ -105,12 +105,12 @@ export default function Home() {
                   </button>
                 )
               ))}
-              <button
-                onClick={() => scrollToSection('contact')}
+              <a
+                href="mailto:Leonard@holterholdings.com"
                 className="block w-full text-center mt-2 px-5 py-2.5 text-sm text-white font-medium border border-white rounded-md hover:bg-white hover:text-slate-900 transition-colors"
               >
                 Get in touch
-              </button>
+              </a>
             </div>
           )}
         </nav>

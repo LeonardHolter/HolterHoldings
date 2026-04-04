@@ -16,6 +16,7 @@ const crimson = Crimson_Text({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://holterholdings.com"),
   title: "Holter Holdings | We Buy Garage Door Businesses",
   description: "We buy garage door businesses from founders. Fair offer in 7 days, close in 30. Your team and culture stay intact. We never sell.",
   keywords: "buy garage door business, sell garage door company, garage door acquisition, home services acquisition, garage door business buyer, sell my garage door business, Holter Holdings, Leonard Holter, permanent capital, founder exit",
@@ -88,7 +89,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="scroll-smooth">
+    <html lang="en" className="scroll-smooth" data-scroll-behavior="smooth">
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
         <script

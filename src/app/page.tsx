@@ -20,6 +20,7 @@ export default function Home() {
 
   const navItems = [
     { id: 'about', label: 'About', href: '/about' },
+    { id: 'careers', label: 'Careers', href: '/careers' },
     { id: 'contact', label: 'Contact', href: undefined },
   ];
 

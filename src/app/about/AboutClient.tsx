@@ -16,6 +16,7 @@ export default function AboutClient() {
           <div className="hidden md:flex items-center gap-8">
             <Link href="/" className="text-sm text-white/80 hover:text-white transition-colors">Home</Link>
             <Link href="/about" className="text-sm text-white transition-colors">About</Link>
+            <Link href="/careers" className="text-sm text-white/80 hover:text-white transition-colors">Careers</Link>
             <a href="mailto:Leonard@holterholdings.com" className="px-5 py-2.5 text-sm text-white font-medium border border-white rounded-md hover:bg-white hover:text-slate-900 transition-colors">
               Get in touch
             </a>

@@ -1,53 +1,22 @@
 'use client';
 
-import { useRef, useState } from 'react';
+import { useState } from 'react';
 import { useForm, ValidationError } from '@formspree/react';
 import Link from 'next/link';
 
-const ACCEPTED_TYPES = '.pdf,.doc,.docx';
-const MAX_FILE_SIZE_MB = 10;
-
 export default function CareersClient() {
   const [state, handleSubmit] = useForm('mojppvbj');
-  const [resume, setResume] = useState<File | null>(null);
-  const [dragOver, setDragOver] = useState(false);
-  const [fileError, setFileError] = useState('');
-  const fileInputRef = useRef<HTMLInputElement>(null);
-
-  function validateFile(file: File): string | null {
-    const ext = file.name.split('.').pop()?.toLowerCase();
-    if (!['pdf', 'doc', 'docx'].includes(ext ?? '')) return 'Please upload a PDF or Word document.';
-    if (file.size > MAX_FILE_SIZE_MB * 1024 * 1024) return `File must be under ${MAX_FILE_SIZE_MB}MB.`;
-    return null;
-  }
-
-  function handleFile(file: File) {
-    const err = validateFile(file);
-    if (err) { setFileError(err); return; }
-    setFileError('');
-    setResume(file);
-    if (fileInputRef.current) {
-      const dt = new DataTransfer();
-      dt.items.add(file);
-      fileInputRef.current.files = dt.files;
-    }
-  }
-
-  function clearFile(e: React.MouseEvent) {
-    e.stopPropagation();
-    setResume(null);
-    setFileError('');
-    if (fileInputRef.current) fileInputRef.current.value = '';
-  }
+  const [applicantName, setApplicantName] = useState('');
+  const [applicantEmail, setApplicantEmail] = useState('');
 
   function onSubmit(e: React.FormEvent<HTMLFormElement>) {
-    if (!resume) {
-      e.preventDefault();
-      setFileError('Please attach your resume.');
-      return;
-    }
+    const form = e.currentTarget;
+    setApplicantName((form.elements.namedItem('name') as HTMLInputElement)?.value ?? '');
+    setApplicantEmail((form.elements.namedItem('email') as HTMLInputElement)?.value ?? '');
     handleSubmit(e);
   }
+
+  const resumeMailto = `mailto:Leonard@holterholdings.com?subject=${encodeURIComponent(`Resume — PE Intern Application (${applicantName})`)}&body=${encodeURIComponent(`Hi Leonard,\n\nPlease find my resume attached for the Private Equity Intern position.\n\n— ${applicantName}\n${applicantEmail}`)}`;
 
   return (
     <div className="min-h-screen bg-slate-900">
@@ -164,7 +133,7 @@ export default function CareersClient() {
             Apply Now
           </h2>
           <p className="text-white/50 text-center mb-12">
-            Fill out the form and upload your resume to apply.
+            Fill out the form below. You&apos;ll then be prompted to email your resume to complete your application.
           </p>
 
           {state.succeeded ? (
@@ -173,10 +142,22 @@ export default function CareersClient() {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
               <h3 className="text-2xl font-bold text-white mb-3">Application Received</h3>
-              <p className="text-white/60 mb-8">Thanks for applying. We&apos;ll be in touch soon.</p>
+              <p className="text-white/60 max-w-sm mx-auto mb-8 leading-relaxed">
+                One last step — please send your resume to complete your application.
+              </p>
+              <a
+                href={resumeMailto}
+                className="inline-flex items-center gap-3 px-7 py-3.5 text-sm text-white font-medium border border-white/70 rounded-md hover:bg-white hover:text-slate-900 transition-colors"
+              >
+                Send resume to Leonard
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                </svg>
+              </a>
+              <p className="text-white/30 text-xs mt-4">Opens your email client with a pre-filled message. Attach your resume before sending.</p>
             </div>
           ) : (
-          <form onSubmit={onSubmit} className="space-y-6" encType="multipart/form-data">
+          <form onSubmit={onSubmit} className="space-y-6">
             <input type="hidden" name="_subject" value="PE Intern Application" />
 
             <div className="grid sm:grid-cols-2 gap-6">
@@ -237,72 +218,6 @@ export default function CareersClient() {
                   placeholder="May 2027"
                 />
               </div>
-            </div>
-
-            {/* Resume Upload */}
-            <div>
-              <label className="block text-sm text-white/70 mb-2">
-                Resume <span className="text-white/40">(PDF or Word, max 10 MB)</span>
-              </label>
-              {/* Single file input: carries name="resume" so Formspree can read it on submit */}
-              <input
-                ref={fileInputRef}
-                id="resume"
-                type="file"
-                name="resume"
-                accept={ACCEPTED_TYPES}
-                className="hidden"
-                onChange={(e) => { if (e.target.files?.[0]) handleFile(e.target.files[0]); }}
-              />
-              <div
-                role="button"
-                tabIndex={0}
-                onClick={() => fileInputRef.current?.click()}
-                onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); fileInputRef.current?.click(); } }}
-                onDragOver={(e) => { e.preventDefault(); setDragOver(true); }}
-                onDragLeave={() => setDragOver(false)}
-                onDrop={(e) => {
-                  e.preventDefault();
-                  setDragOver(false);
-                  if (e.dataTransfer.files?.[0]) handleFile(e.dataTransfer.files[0]);
-                }}
-                className={`w-full rounded-lg border-2 border-dashed px-4 py-8 text-center cursor-pointer transition-colors ${
-                  dragOver
-                    ? 'border-white/60 bg-slate-700'
-                    : resume
-                      ? 'border-white/30 bg-slate-800'
-                      : 'border-white/10 bg-slate-800 hover:border-white/30'
-                }`}
-              >
-                {resume ? (
-                  <div className="flex items-center justify-center gap-3">
-                    <svg className="w-6 h-6 text-white/70 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-                    </svg>
-                    <span className="text-sm text-white/80">{resume.name}</span>
-                    <span className="text-xs text-white/40">({(resume.size / 1024 / 1024).toFixed(1)} MB)</span>
-                    <button
-                      type="button"
-                      onClick={(e) => { clearFile(e); }}
-                      className="ml-2 p-1 rounded hover:bg-slate-700"
-                    >
-                      <svg className="w-4 h-4 text-white/50" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-                      </svg>
-                    </button>
-                  </div>
-                ) : (
-                  <>
-                    <svg className="w-8 h-8 text-white/30 mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12" />
-                    </svg>
-                    <p className="text-sm text-white/40">
-                      Drag and drop your resume here, or <span className="text-white/70 underline underline-offset-2">browse</span>
-                    </p>
-                  </>
-                )}
-              </div>
-              {fileError && <p className="text-red-400 text-xs mt-2">{fileError}</p>}
             </div>
 
             <div>

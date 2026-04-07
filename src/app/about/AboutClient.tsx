@@ -80,7 +80,7 @@ export default function AboutClient() {
             take good care of their businesses.
           </p>
           <p>
-            Nobody had done this for garage door and home service companies like ours, so we said
+            Nobody had done this for great companies like ours, so we said
             &ldquo;screw it&rdquo; and decided to do it ourselves{' '}
             <strong className="text-white">using Buffett&apos;s simple approach.</strong>
           </p>
@@ -108,7 +108,7 @@ export default function AboutClient() {
           <p>
             We thought about all the things we hated about selling our
             company and worked backwards, then used our capital
-            to buy wonderful garage door businesses from founders like us.
+            to buy wonderful businesses from founders like us.
           </p>
           <p>
             It turns out that selling your company doesn&apos;t

@@ -17,9 +17,9 @@ const crimson = Crimson_Text({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://holterholdings.com"),
-  title: "Holter Holdings | We Buy Garage Door Businesses",
-  description: "We buy garage door businesses from founders. Fair offer in 7 days, close in 30. Your team and culture stay intact. We never sell.",
-  keywords: "buy garage door business, sell garage door company, garage door acquisition, home services acquisition, garage door business buyer, sell my garage door business, Holter Holdings, Leonard Holter, permanent capital, founder exit",
+  title: "Holter Holdings | We Buy Great Businesses",
+  description: "We buy great businesses from founders. Fair offer in 7 days, close in 30. Your team and culture stay intact. We never sell.",
+  keywords: "buy great business, sell your business, business acquisition, home services acquisition, small business buyer, sell my business, Holter Holdings, Leonard Holter, permanent capital, founder exit",
   authors: [{ name: "Holter Holdings" }],
   robots: "index, follow",
   icons: {
@@ -37,8 +37,8 @@ export const metadata: Metadata = {
   },
   manifest: '/site.webmanifest',
   openGraph: {
-    title: "Holter Holdings | We Buy Garage Door Businesses",
-    description: "We buy garage door businesses from founders. Fair offer in 7 days, close in 30. Your team and culture stay intact. We never sell.",
+    title: "Holter Holdings | We Buy Great Businesses",
+    description: "We buy great businesses from founders. Fair offer in 7 days, close in 30. Your team and culture stay intact. We never sell.",
     url: "https://holterholdings.com",
     siteName: "Holter Holdings",
     type: "website",
@@ -47,14 +47,14 @@ export const metadata: Metadata = {
         url: '/android-chrome-512x512.png',
         width: 512,
         height: 512,
-        alt: 'Holter Holdings - We Buy Garage Door Businesses',
+        alt: 'Holter Holdings - We Buy Great Businesses',
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Holter Holdings | We Buy Garage Door Businesses",
-    description: "We buy garage door businesses from founders. Fair offer in 7 days, close in 30. Your team and culture stay intact.",
+    title: "Holter Holdings | We Buy Great Businesses",
+    description: "We buy great businesses from founders. Fair offer in 7 days, close in 30. Your team and culture stay intact.",
     images: ['/android-chrome-512x512.png'],
   },
 };
@@ -65,7 +65,7 @@ const jsonLd = {
   "name": "Holter Holdings",
   "url": "https://holterholdings.com",
   "logo": "https://holterholdings.com/android-chrome-512x512.png",
-  "description": "We buy garage door businesses from founders. Fair offer in 7 days, close in 30. Your team and culture stay intact.",
+  "description": "We buy great businesses from founders. Fair offer in 7 days, close in 30. Your team and culture stay intact.",
   "founder": {
     "@type": "Person",
     "name": "Leonard Holter"

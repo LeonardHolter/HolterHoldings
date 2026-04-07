@@ -164,11 +164,11 @@ export default function Home() {
             {/* Left — illustration */}
             <div className="flex items-center justify-center md:justify-start -mx-6 md:-mx-0">
               <Image
-                src="/selling-chaos.png"
+                src="/selling-chaos-new.png"
                 alt="The chaos of selling a company the traditional way"
                 width={1200}
                 height={1200}
-                className="w-full object-contain mix-blend-screen"
+                className="w-full object-contain mix-blend-screen scale-125"
               />
             </div>
 

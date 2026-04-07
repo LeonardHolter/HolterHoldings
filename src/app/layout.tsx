@@ -17,7 +17,7 @@ const crimson = Crimson_Text({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://holterholdings.com"),
-  title: "Holter Holdings | We Buy Great Businesses",
+  title: "Holter Holdings | We Buy Great Service Businesses",
   description: "We buy great businesses from founders. Fair offer in 7 days, close in 30. Your team and culture stay intact. We never sell.",
   keywords: "buy great business, sell your business, business acquisition, home services acquisition, small business buyer, sell my business, Holter Holdings, Leonard Holter, permanent capital, founder exit",
   authors: [{ name: "Holter Holdings" }],
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
   },
   manifest: '/site.webmanifest',
   openGraph: {
-    title: "Holter Holdings | We Buy Great Businesses",
+    title: "Holter Holdings | We Buy Great Service Businesses",
     description: "We buy great businesses from founders. Fair offer in 7 days, close in 30. Your team and culture stay intact. We never sell.",
     url: "https://holterholdings.com",
     siteName: "Holter Holdings",
@@ -47,13 +47,13 @@ export const metadata: Metadata = {
         url: '/android-chrome-512x512.png',
         width: 512,
         height: 512,
-        alt: 'Holter Holdings - We Buy Great Businesses',
+        alt: 'Holter Holdings - We Buy Great Service Businesses',
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Holter Holdings | We Buy Great Businesses",
+    title: "Holter Holdings | We Buy Great Service Businesses",
     description: "We buy great businesses from founders. Fair offer in 7 days, close in 30. Your team and culture stay intact.",
     images: ['/android-chrome-512x512.png'],
   },

@@ -166,9 +166,10 @@ export default function Home() {
               <Image
                 src="/selling-chaos-new.png"
                 alt="The chaos of selling a company the traditional way"
-                width={1200}
-                height={1200}
-                className="w-full object-contain mix-blend-screen scale-125"
+                width={1024}
+                height={685}
+                quality={100}
+                className="w-full object-contain mix-blend-screen"
               />
             </div>
 

@@ -216,47 +216,7 @@ export default function Home() {
             Holter Holdings vs. The Other Guys
           </h2>
 
-          <div className="grid md:grid-cols-3 gap-6">
-            {/* Venture Capital */}
-            <div className="bg-slate-800 rounded-2xl p-8 flex flex-col">
-              <div className="flex justify-center mb-6 h-48">
-                <Image
-                  src="/venture-capital-illustration.png"
-                  alt="Venture Capital"
-                  width={200}
-                  height={200}
-                  className="object-contain h-full w-auto"
-                />
-              </div>
-              <h3 className="text-2xl font-bold text-white mb-6">Venture Capital</h3>
-              <ul className="space-y-4 text-sm">
-                <li className="flex items-start gap-3">
-                  <svg className="w-5 h-5 text-white/60 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>
-                  <span className="text-white/80">Huge valuation</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <svg className="w-5 h-5 text-red-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" /></svg>
-                  <span className="text-white/80">3–6 month process</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <svg className="w-5 h-5 text-red-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" /></svg>
-                  <span className="text-white/80">Founders committed to 5+ years</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <svg className="w-5 h-5 text-red-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" /></svg>
-                  <span className="text-white/80">Terms could make your equity worthless</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <svg className="w-5 h-5 text-red-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" /></svg>
-                  <span className="text-white/80">Pressure to provide 10–100X returns</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <svg className="w-5 h-5 text-red-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" /></svg>
-                  <span className="text-white/80">No cash to founders, just money to grow</span>
-                </li>
-              </ul>
-            </div>
-
+          <div className="grid md:grid-cols-2 gap-6 max-w-3xl mx-auto">
             {/* Private Equity */}
             <div className="bg-slate-800 rounded-2xl p-8 flex flex-col">
               <div className="flex justify-center mb-6 h-48">

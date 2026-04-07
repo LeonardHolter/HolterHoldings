@@ -123,7 +123,7 @@ export default function Home() {
             <div className="pb-16">
               <h1 className="text-6xl sm:text-7xl md:text-8xl font-bold text-white leading-[1.05]">
                 We buy{' '}
-                <span className="bg-slate-800 px-3 py-1 rounded-md inline-block">great</span>
+                <span className="bg-slate-800 px-3 py-1 rounded-md inline-block">great service</span>
                 {' '}businesses.
               </h1>
 

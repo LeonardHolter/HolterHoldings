@@ -409,29 +409,6 @@ export default function Home() {
             </a>
           </div>
 
-          {/* Newsletter signup */}
-          <div className="py-12">
-            <p className="text-white/70 text-base max-w-lg mb-8 leading-relaxed">
-              Sign up for the Holter Dispatch, a monthly digest of what we&apos;re thinking, learning, and looking to do next.
-            </p>
-            <form
-              onSubmit={(e) => e.preventDefault()}
-              className="flex items-center border-b border-white/40 max-w-2xl pb-3"
-            >
-              <input
-                type="email"
-                placeholder="Email address"
-                className="flex-1 bg-transparent text-white/50 placeholder-white/40 text-base focus:outline-none"
-              />
-              <button type="submit" className="ml-4 p-1 text-white/60 hover:text-white transition-colors">
-                <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <circle cx="12" cy="12" r="10" strokeWidth={1.5} />
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M13 9l3 3m0 0l-3 3m3-3H8" />
-                </svg>
-              </button>
-            </form>
-          </div>
-
           {/* Bottom bar */}
           <div className="py-6 border-t border-white/10 flex items-center justify-between">
             <p className="text-white/40 text-sm">© 2026 Holter Holdings</p>

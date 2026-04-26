@@ -12,13 +12,6 @@ export default function Home() {
 
       {/* Official Index */}
       <section className="section">
-        <div className="section-h">
-          <div className="label">
-            <span className="num">i.</span> Official Index
-          </div>
-          <div className="meta">Updated April 2026</div>
-        </div>
-
         <div className="index-grid">
 
           <a href="#shareholder-letters">

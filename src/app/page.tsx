@@ -24,7 +24,7 @@ export default function Home() {
             </svg>
           </a>
 
-          <a href="#investment-criteria">
+          <a href="/investment-criteria">
             <div className="ig-text">
               <div className="ig-title">Investment Criteria</div>
               <div className="ig-meta">Updated April 2026</div>
@@ -34,7 +34,7 @@ export default function Home() {
             </svg>
           </a>
 
-          <a href="#our-process">
+          <a href="/buying-process">
             <div className="ig-text">
               <div className="ig-title">Our Buying Process</div>
               <div className="ig-meta">Five steps. No surprises.</div>

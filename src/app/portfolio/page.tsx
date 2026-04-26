@@ -13,7 +13,7 @@ const companies = [
   {
     name: 'Zkypee',
     url: 'https://zkypee.com',
-    description: 'A modern platform built for the next generation of service businesses.',
+    description: 'Cheap International Calls In Your Browser.',
   },
 ];
 

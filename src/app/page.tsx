@@ -10,7 +10,7 @@ export default function Home() {
         {/* Hero */}
         <section className="hero">
           <h1>We buy great companies, and hold them <em>forever.</em></h1>
-          <p>Permanent capital. Plain English. A fair offer in a week, a clean close in a month, and a written promise to leave a good business alone.</p>
+          <p>We never sell and we never change something that is working.</p>
         </section>
 
         {/* Official Index */}

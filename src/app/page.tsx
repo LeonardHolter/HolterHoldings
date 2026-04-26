@@ -14,7 +14,7 @@ export default function Home() {
       <section className="section">
         <div className="index-grid">
 
-          <a href="#shareholder-letters">
+          <a href="/shareholder-letters">
             <div className="ig-text">
               <div className="ig-title">Shareholder Letters</div>
               <div className="ig-meta">Coming soon</div>

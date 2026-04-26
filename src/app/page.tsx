@@ -27,7 +27,6 @@ export default function Home() {
           <a href="/investment-criteria">
             <div className="ig-text">
               <div className="ig-title">Investment Criteria</div>
-              <div className="ig-meta">Updated April 2026</div>
             </div>
             <svg className="ig-arrow" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5">
               <path d="M3 8h10M9 4l4 4-4 4" strokeLinecap="round" strokeLinejoin="round" />
@@ -37,7 +36,6 @@ export default function Home() {
           <a href="/buying-process">
             <div className="ig-text">
               <div className="ig-title">Our Buying Process</div>
-              <div className="ig-meta">Five steps. No surprises.</div>
             </div>
             <svg className="ig-arrow" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5">
               <path d="M3 8h10M9 4l4 4-4 4" strokeLinecap="round" strokeLinejoin="round" />
@@ -47,7 +45,6 @@ export default function Home() {
           <a href="/portfolio">
             <div className="ig-text">
               <div className="ig-title">Portfolio</div>
-              <div className="ig-meta">Powerwash-nyc · Zkypee</div>
             </div>
             <svg className="ig-arrow" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5">
               <path d="M3 8h10M9 4l4 4-4 4" strokeLinecap="round" strokeLinejoin="round" />

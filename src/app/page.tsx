@@ -17,7 +17,6 @@ export default function Home() {
           <a href="/shareholder-letters">
             <div className="ig-text">
               <div className="ig-title">Shareholder Letters</div>
-              <div className="ig-meta">Coming soon</div>
             </div>
             <svg className="ig-arrow" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5">
               <path d="M3 8h10M9 4l4 4-4 4" strokeLinecap="round" strokeLinejoin="round" />

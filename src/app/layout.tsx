@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Instrument_Serif, DM_Sans } from "next/font/google";
+import { Instrument_Serif, Cormorant_Garamond, Newsreader, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 
 const instrumentSerif = Instrument_Serif({
@@ -10,19 +10,34 @@ const instrumentSerif = Instrument_Serif({
   display: "swap",
 });
 
-const dmSans = DM_Sans({
+const cormorantGaramond = Cormorant_Garamond({
+  subsets: ["latin"],
+  weight: ["400", "500"],
+  style: ["normal", "italic"],
+  variable: "--font-cormorant",
+  display: "swap",
+});
+
+const newsreader = Newsreader({
   subsets: ["latin"],
   weight: ["300", "400", "500"],
   style: ["normal", "italic"],
-  variable: "--font-dm-sans",
+  variable: "--font-newsreader",
+  display: "swap",
+});
+
+const jetbrainsMono = JetBrains_Mono({
+  subsets: ["latin"],
+  weight: ["400", "500"],
+  variable: "--font-jetbrains",
   display: "swap",
 });
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://holterholdings.com"),
-  title: "Holter Holdings | We Buy Great Service Businesses",
+  title: "Holter Holdings — Buying Good Businesses",
   description:
-    "We buy great businesses from founders. Fair offer in 7 days, close in 30. Your team and culture stay intact. We never sell.",
+    "Permanent capital. Plain English. A fair offer in a week, a clean close in a month, and a written promise to leave a good business alone.",
   keywords:
     "buy great business, sell your business, business acquisition, home services acquisition, small business buyer, sell my business, Holter Holdings, Leonard Holter, permanent capital, founder exit",
   authors: [{ name: "Holter Holdings" }],
@@ -40,54 +55,21 @@ export const metadata: Metadata = {
   },
   manifest: "/site.webmanifest",
   openGraph: {
-    title: "Holter Holdings | We Buy Great Service Businesses",
+    title: "Holter Holdings — Buying Good Businesses",
     description:
-      "We buy great businesses from founders. Fair offer in 7 days, close in 30. Your team and culture stay intact. We never sell.",
+      "Permanent capital. Plain English. A fair offer in a week, a clean close in a month, and a written promise to leave a good business alone.",
     url: "https://holterholdings.com",
     siteName: "Holter Holdings",
     type: "website",
-    images: [
-      {
-        url: "/android-chrome-512x512.png",
-        width: 512,
-        height: 512,
-        alt: "Holter Holdings - We Buy Great Service Businesses",
-      },
-    ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Holter Holdings | We Buy Great Service Businesses",
-    description:
-      "We buy great businesses from founders. Fair offer in 7 days, close in 30. Your team and culture stay intact.",
-    images: ["/android-chrome-512x512.png"],
   },
 };
 
-const jsonLd = {
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  name: "Holter Holdings",
-  url: "https://holterholdings.com",
-  logo: "https://holterholdings.com/android-chrome-512x512.png",
-  description:
-    "We buy great businesses from founders. Fair offer in 7 days, close in 30. Your team and culture stay intact.",
-  founder: {
-    "@type": "Person",
-    name: "Leonard Holter",
-  },
-  address: {
-    "@type": "PostalAddress",
-    addressLocality: "New York",
-    addressRegion: "NY",
-    addressCountry: "US",
-  },
-  contactPoint: {
-    "@type": "ContactPoint",
-    email: "Leonard@holterholdings.com",
-    contactType: "sales",
-  },
-};
+const fontVars = [
+  instrumentSerif.variable,
+  cormorantGaramond.variable,
+  newsreader.variable,
+  jetbrainsMono.variable,
+].join(" ");
 
 export default function RootLayout({
   children,
@@ -95,13 +77,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${instrumentSerif.variable} ${dmSans.variable}`}>
+    <html lang="en" className={fontVars}>
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-        />
       </head>
       <body>{children}</body>
     </html>

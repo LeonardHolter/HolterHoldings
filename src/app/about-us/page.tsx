@@ -9,8 +9,8 @@ export const metadata: Metadata = {
 };
 
 const team = [
-  { img: "/leonard_holter.jpeg", name: "Leonard Holter", role: "Managing Partner" },
   { img: "/brett_maxam.jpeg", name: "Brett Maxam", role: "Executive Advisor" },
+  { img: "/leonard_holter.jpeg", name: "Leonard Holter", role: "Managing Partner" },
   { img: "/john_colman.jpeg", name: "John Colman", role: "Senior Analyst" },
   { img: "/tommaso_mortara.jpeg", name: "Tommaso Mortara", role: "Analyst" },
 ];
@@ -52,7 +52,7 @@ export default function AboutUsPage() {
                       alt={person.name}
                       width={400}
                       height={533}
-                      style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "top" }}
+                      style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "top", filter: "grayscale(100%)" }}
                     />
                   </div>
                   <div className="ig-title" style={{ marginBottom: 4 }}>{person.name}</div>

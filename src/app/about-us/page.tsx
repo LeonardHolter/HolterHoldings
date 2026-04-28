@@ -107,6 +107,8 @@ export default function AboutUsPage() {
             &nbsp;·&nbsp; New York, NY 10027
           </span>
           <span>
+            <a href="/contact">Contact</a>
+            {" · "}
             <a href="/legal">Legal Disclaimer</a>
             {" · "}
             <a href="/privacy">Privacy</a>

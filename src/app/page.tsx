@@ -32,6 +32,15 @@ export default function Home() {
             </svg>
           </a>
 
+          <a href="/why-sell-to-us">
+            <div className="ig-text">
+              <div className="ig-title">Why Sell to Us</div>
+            </div>
+            <svg className="ig-arrow" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5">
+              <path d="M3 8h10M9 4l4 4-4 4" strokeLinecap="round" strokeLinejoin="round" />
+            </svg>
+          </a>
+
           <a href="/investment-criteria">
             <div className="ig-text">
               <div className="ig-title">Investment Criteria</div>
@@ -95,6 +104,8 @@ export default function Home() {
             &nbsp;·&nbsp; New York, NY 10027
           </span>
           <span>
+            <a href="/contact">Contact</a>
+            {' · '}
             <a href="/legal">Legal Disclaimer</a>
             {' · '}
             <a href="/privacy">Privacy</a>

@@ -25,7 +25,13 @@ export default function AboutUsPage() {
         <h1>
           The people behind <em>Holter Holdings.</em>
         </h1>
-        <p>A small team of operators and analysts focused on buying great companies and holding them forever.</p>
+        <p>
+          Our team has spent decades acquiring, operating, and scaling service companies — from owning a residential
+          concrete construction business in the Pacific Northwest to leading finance and operations at companies across
+          healthcare, software, industrial services, and utilities. We&apos;ve been the owner, the operator, the CFO,
+          and the buyer. We understand what makes great service businesses tick because we&apos;ve built and run them
+          ourselves.
+        </p>
       </section>
 
       <section className="section">

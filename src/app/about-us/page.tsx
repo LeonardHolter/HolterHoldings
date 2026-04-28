@@ -52,8 +52,7 @@ export default function AboutUsPage() {
                       alt={person.name}
                       width={800}
                       height={1067}
-                      sizes="(max-width: 768px) 50vw, 25vw"
-                      quality={90}
+                      unoptimized
                       style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "top", filter: "grayscale(100%)" }}
                     />
                   </div>

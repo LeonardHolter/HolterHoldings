@@ -100,6 +100,53 @@ export default function AboutUsPage() {
         </div>
       </section>
 
+      <section className="section">
+        <div style={{ maxWidth: 880, margin: "0 auto" }}>
+          <div
+            style={{
+              fontFamily: "var(--mono)",
+              fontSize: 11,
+              letterSpacing: "0.08em",
+              textTransform: "uppercase",
+              color: "var(--green)",
+              marginBottom: 12,
+            }}
+          >
+            Featured
+          </div>
+          <h2
+            style={{
+              fontFamily: "var(--cormorant)",
+              fontSize: "clamp(28px, 3.4vw, 40px)",
+              fontWeight: 500,
+              letterSpacing: "-0.01em",
+              lineHeight: 1.1,
+              color: "var(--ink)",
+              marginBottom: 28,
+            }}
+          >
+            Brett on <em style={{ color: "var(--green)" }}>Acquiring Minds</em>
+          </h2>
+          <div
+            style={{
+              position: "relative",
+              width: "100%",
+              aspectRatio: "16/9",
+              overflow: "hidden",
+              background: "#000",
+            }}
+          >
+            <iframe
+              src="https://www.youtube.com/embed/vHLMB7t3DVw"
+              title="Brett Maxam on Acquiring Minds"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+              style={{ position: "absolute", inset: 0, width: "100%", height: "100%", border: 0 }}
+            />
+          </div>
+        </div>
+      </section>
+
       <footer className="foot">
         <div className="foot-legal">
           <span className="foot-contact">

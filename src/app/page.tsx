@@ -75,7 +75,7 @@ export default function Home() {
             marginBottom: 28,
           }}
         >
-          Featured on <em style={{ color: "var(--green)" }}>Acquiring Minds</em>
+          Brett featured on <em style={{ color: "var(--green)" }}>Acquiring Minds</em>
         </h2>
         <div
           style={{

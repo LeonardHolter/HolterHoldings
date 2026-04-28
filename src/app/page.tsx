@@ -64,18 +64,6 @@ export default function Home() {
 
       {/* Featured video */}
       <section className="section">
-        <div
-          style={{
-            fontFamily: "var(--font-jetbrains, ui-monospace, monospace)",
-            fontSize: 11,
-            letterSpacing: "0.08em",
-            textTransform: "uppercase",
-            color: "var(--green)",
-            marginBottom: 12,
-          }}
-        >
-          Featured
-        </div>
         <h2
           style={{
             fontFamily: "var(--font-cormorant, Georgia, serif)",
@@ -87,7 +75,7 @@ export default function Home() {
             marginBottom: 28,
           }}
         >
-          Brett on <em style={{ color: "var(--green)" }}>Acquiring Minds</em>
+          Featured on <em style={{ color: "var(--green)" }}>Acquiring Minds</em>
         </h2>
         <div
           style={{

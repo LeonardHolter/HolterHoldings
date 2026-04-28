@@ -32,30 +32,32 @@ export default function AboutUsPage() {
         <div
           style={{
             display: "grid",
-            gridTemplateColumns: "repeat(2, 1fr)",
-            columnGap: 48,
-            rowGap: 64,
+            gridTemplateColumns: "repeat(auto-fit, minmax(180px, 1fr))",
+            columnGap: 32,
+            rowGap: 48,
+            maxWidth: 880,
           }}
         >
           {team.map((person) => (
             <article
               key={person.name}
-              style={{ display: "flex", flexDirection: "column" }}
+              style={{ display: "flex", flexDirection: "column", alignItems: "center", textAlign: "center" }}
             >
               <div
                 style={{
-                  width: "100%",
-                  aspectRatio: "4/5",
+                  width: 140,
+                  height: 140,
+                  borderRadius: "50%",
                   overflow: "hidden",
-                  marginBottom: 20,
+                  marginBottom: 18,
                   background: "var(--tint)",
                 }}
               >
                 <Image
                   src={person.img}
                   alt={person.name}
-                  width={800}
-                  height={1000}
+                  width={280}
+                  height={280}
                   unoptimized
                   style={{
                     width: "100%",
@@ -69,9 +71,9 @@ export default function AboutUsPage() {
               <h2
                 style={{
                   fontFamily: "var(--cormorant)",
-                  fontSize: 28,
+                  fontSize: 22,
                   fontWeight: 500,
-                  letterSpacing: "-0.01em",
+                  letterSpacing: "-0.005em",
                   lineHeight: 1.1,
                   color: "var(--ink)",
                   marginBottom: 6,

@@ -50,8 +50,10 @@ export default function AboutUsPage() {
                     <Image
                       src={person.img}
                       alt={person.name}
-                      width={400}
-                      height={533}
+                      width={800}
+                      height={1067}
+                      sizes="(max-width: 768px) 50vw, 25vw"
+                      quality={90}
                       style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "top", filter: "grayscale(100%)" }}
                     />
                   </div>

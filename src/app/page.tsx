@@ -62,6 +62,52 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Featured video */}
+      <section className="section">
+        <div
+          style={{
+            fontFamily: "var(--font-jetbrains, ui-monospace, monospace)",
+            fontSize: 11,
+            letterSpacing: "0.08em",
+            textTransform: "uppercase",
+            color: "var(--green)",
+            marginBottom: 12,
+          }}
+        >
+          Featured
+        </div>
+        <h2
+          style={{
+            fontFamily: "var(--font-cormorant, Georgia, serif)",
+            fontSize: "clamp(28px, 3.4vw, 40px)",
+            fontWeight: 500,
+            letterSpacing: "-0.01em",
+            lineHeight: 1.1,
+            color: "var(--ink)",
+            marginBottom: 28,
+          }}
+        >
+          Brett on <em style={{ color: "var(--green)" }}>Acquiring Minds</em>
+        </h2>
+        <div
+          style={{
+            position: "relative",
+            width: "100%",
+            aspectRatio: "16/9",
+            overflow: "hidden",
+            background: "#000",
+          }}
+        >
+          <iframe
+            src="https://www.youtube.com/embed/vHLMB7t3DVw"
+            title="Brett Maxam on Acquiring Minds"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowFullScreen
+            style={{ position: "absolute", inset: 0, width: "100%", height: "100%", border: 0 }}
+          />
+        </div>
+      </section>
+
       {/* Footer */}
       <footer className="foot">
         <div className="foot-legal">

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 
@@ -8,10 +9,10 @@ export const metadata: Metadata = {
 };
 
 const team = [
-  { name: "Leonard Holter", role: "Managing Partner" },
-  { name: "Brett Maxam", role: "Executive Advisor" },
-  { name: "John Colman", role: "Senior Analyst" },
-  { name: "Tommaso Mortara", role: "Analyst" },
+  { img: "/leonard_holter.jpeg", name: "Leonard Holter", role: "Managing Partner" },
+  { img: "/brett_maxam.jpeg", name: "Brett Maxam", role: "Executive Advisor" },
+  { img: "/john_colman.jpeg", name: "John Colman", role: "Senior Analyst" },
+  { img: "/tommaso_mortara.jpeg", name: "Tommaso Mortara", role: "Analyst" },
 ];
 
 export default function AboutUsPage() {
@@ -27,20 +28,34 @@ export default function AboutUsPage() {
         </section>
 
         <section className="section" style={{ borderTop: "1px solid var(--border)" }}>
-          <div style={{ maxWidth: 700, margin: "0 auto" }}>
-            <div className="index-grid">
+          <div style={{ maxWidth: 900, margin: "0 auto" }}>
+            <div
+              style={{
+                display: "grid",
+                gridTemplateColumns: "repeat(auto-fill, minmax(200px, 1fr))",
+                gap: 40,
+              }}
+            >
               {team.map((person) => (
-                <div
-                  key={person.name}
-                  style={{
-                    display: "flex",
-                    flexDirection: "column",
-                    gap: 4,
-                    padding: "22px 4px",
-                    borderBottom: "1px solid var(--rule)",
-                  }}
-                >
-                  <div className="ig-title">{person.name}</div>
+                <div key={person.name}>
+                  <div
+                    style={{
+                      width: "100%",
+                      aspectRatio: "3/4",
+                      overflow: "hidden",
+                      marginBottom: 16,
+                      background: "var(--tint)",
+                    }}
+                  >
+                    <Image
+                      src={person.img}
+                      alt={person.name}
+                      width={400}
+                      height={533}
+                      style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "top" }}
+                    />
+                  </div>
+                  <div className="ig-title" style={{ marginBottom: 4 }}>{person.name}</div>
                   <div className="ig-meta">{person.role}</div>
                 </div>
               ))}

@@ -1,7 +1,7 @@
 import Link from 'next/link';
 
 export const metadata = {
-  title: 'Portfolio — Holter Holdings',
+  title: 'Portfolio - Holter Holdings',
 };
 
 const companies = [

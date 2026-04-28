@@ -1,7 +1,7 @@
 import Link from 'next/link';
 
 export const metadata = {
-  title: 'Shareholder Letters — Holter Holdings',
+  title: 'Shareholder Letters - Holter Holdings',
 };
 
 export default function ShareholderLettersPage() {

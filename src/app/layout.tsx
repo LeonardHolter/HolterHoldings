@@ -35,7 +35,7 @@ const jetbrainsMono = JetBrains_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://holterholdings.com"),
-  title: "Holter Holdings — Buying Good Businesses",
+  title: "Holter Holdings - Buying Good Businesses",
   description:
     "Permanent capital. Plain English. A fair offer in a week, a clean close in a month, and a written promise to leave a good business alone.",
   keywords:
@@ -55,7 +55,7 @@ export const metadata: Metadata = {
   },
   manifest: "/site.webmanifest",
   openGraph: {
-    title: "Holter Holdings — Buying Good Businesses",
+    title: "Holter Holdings - Buying Good Businesses",
     description:
       "Permanent capital. Plain English. A fair offer in a week, a clean close in a month, and a written promise to leave a good business alone.",
     url: "https://holterholdings.com",

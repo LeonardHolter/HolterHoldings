@@ -1,24 +1,24 @@
 import Link from 'next/link';
 
 export const metadata = {
-  title: 'Our Buying Process — Holter Holdings',
+  title: 'Our Buying Process - Holter Holdings',
 };
 
 const steps = [
   {
     num: '01',
     title: 'You reach out',
-    body: 'Send us an email or give us a call. Tell us a little about your business — what you do, roughly how large it is, and why you\'re thinking about selling. No deck required. No banker needed. Just a conversation between owners.',
+    body: 'Send us an email or give us a call. Tell us a little about your business - what you do, roughly how large it is, and why you\'re thinking about selling. No deck required. No banker needed. Just a conversation between owners.',
   },
   {
     num: '02',
     title: 'We give you a straight answer quickly',
-    body: 'Buffett famously made acquisition decisions in a matter of hours — sometimes the same day. We operate the same way. Within a week of our first conversation, we\'ll tell you plainly whether we\'re interested and what a deal might look like. No stringing you along.',
+    body: 'Buffett famously made acquisition decisions in a matter of hours - sometimes the same day. We operate the same way. Within a week of our first conversation, we\'ll tell you plainly whether we\'re interested and what a deal might look like. No stringing you along.',
   },
   {
     num: '03',
     title: 'A simple letter of intent',
-    body: 'If there\'s a fit, we send a short, plain-English letter of intent. The terms are what they are — no games, no bait-and-switch. What we agree to on the handshake is what shows up in the documents. We don\'t re-trade.',
+    body: 'If there\'s a fit, we send a short, plain-English letter of intent. The terms are what they are - no games, no bait-and-switch. What we agree to on the handshake is what shows up in the documents. We don\'t re-trade.',
   },
   {
     num: '04',
@@ -28,7 +28,7 @@ const steps = [
   {
     num: '05',
     title: 'We close and get out of your way',
-    body: 'Cash wired. Deal done. And then — nothing. We don\'t install new management, rebrand the company, or force your team into weekly reporting calls. You built something good. We\'re here to protect it, not tinker with it.',
+    body: 'Cash wired. Deal done. And then - nothing. We don\'t install new management, rebrand the company, or force your team into weekly reporting calls. You built something good. We\'re here to protect it, not tinker with it.',
   },
 ];
 
@@ -53,7 +53,7 @@ export default function BuyingProcessPage() {
           <p>
             Warren Buffett showed that it was possible to do billion-dollar deals on a handshake,
             close in weeks, and leave great businesses completely alone afterward. We apply that
-            same logic to the companies we acquire — just at a smaller scale.
+            same logic to the companies we acquire - just at a smaller scale.
           </p>
         </div>
 
@@ -71,7 +71,7 @@ export default function BuyingProcessPage() {
 
         <div className="doc-body" style={{ marginTop: 64 }}>
           <p>
-            The whole thing — from first conversation to cash in your account — can happen in
+            The whole thing - from first conversation to cash in your account - can happen in
             thirty days. It has. We prefer it that way. Long processes are expensive, exhausting,
             and bad for your team morale. Let&apos;s just get it done.
           </p>

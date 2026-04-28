@@ -14,9 +14,9 @@ const values = [
 
 const steps = [
   { num: '01', title: 'First conversation', desc: "A short call to understand your business, your goals, and whether we're a good fit. No commitment." },
-  { num: '02', title: 'We do our homework', desc: "We review the key financials and operations. We move fast — typically 3–5 business days." },
+  { num: '02', title: 'We do our homework', desc: "We review the key financials and operations. We move fast - typically 3–5 business days." },
   { num: '03', title: 'Letter of intent', desc: "A clear, plain-English offer letter. No tricks, no bait-and-switch. What you see is what you get." },
-  { num: '04', title: 'Due diligence', desc: "A streamlined process. We're not trying to find reasons to lower the price — we're building trust." },
+  { num: '04', title: 'Due diligence', desc: "A streamlined process. We're not trying to find reasons to lower the price - we're building trust." },
   { num: '05', title: 'Close', desc: 'As quick as 30 days from first conversation. Cash wired, keys handed over. Done.' },
 ];
 
@@ -51,7 +51,7 @@ export default function AboutClient() {
             </p>
             <p>
               We spent years building and running businesses in the trades and service industries. Along the way, we
-              learned what actually makes these companies tick — the routes, the technicians, the recurring customers,
+              learned what actually makes these companies tick - the routes, the technicians, the recurring customers,
               the local trust that takes a decade to build.
             </p>
             <p>

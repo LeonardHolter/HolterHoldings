@@ -1,13 +1,13 @@
 import Link from 'next/link';
 
 export const metadata = {
-  title: 'Investment Criteria — Holter Holdings',
+  title: 'Investment Criteria - Holter Holdings',
 };
 
 const criteria = [
   {
     title: 'A business you can understand in five minutes',
-    body: 'Buffett\'s first rule: never buy what you can\'t explain. We look for businesses with simple, durable models — service companies, recurring-revenue operations, businesses that solve an obvious problem for a clear customer. If the business requires a forty-slide deck to explain, it\'s probably not for us.',
+    body: 'Buffett\'s first rule: never buy what you can\'t explain. We look for businesses with simple, durable models - service companies, recurring-revenue operations, businesses that solve an obvious problem for a clear customer. If the business requires a forty-slide deck to explain, it\'s probably not for us.',
   },
   {
     title: 'Consistent earnings over time',
@@ -27,7 +27,7 @@ const criteria = [
   },
   {
     title: 'Good people',
-    body: 'We ask one question about management: are they honest? Not polished, not credentialed — honest. Buffett has said he won\'t do a deal with someone he doesn\'t trust, regardless of how attractive the numbers look. We feel the same way. The best businesses are run by people who take their word seriously.',
+    body: 'We ask one question about management: are they honest? Not polished, not credentialed - honest. Buffett has said he won\'t do a deal with someone he doesn\'t trust, regardless of how attractive the numbers look. We feel the same way. The best businesses are run by people who take their word seriously.',
   },
   {
     title: 'Little to no debt',

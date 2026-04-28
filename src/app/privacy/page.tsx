@@ -1,7 +1,7 @@
 import Link from 'next/link';
 
 export const metadata = {
-  title: 'Privacy Policy — Holter Holdings',
+  title: 'Privacy Policy - Holter Holdings',
 };
 
 export default function PrivacyPage() {
@@ -18,7 +18,7 @@ export default function PrivacyPage() {
         <div className="doc-body">
           <h2>What We Collect</h2>
           <p>
-            When you contact us — by email, phone, or through any form on this site — we collect the information you voluntarily provide, such as your name, email address, phone number, and details about your business. We do not collect data through cookies, trackers, or analytics tools beyond basic server logs.
+            When you contact us - by email, phone, or through any form on this site - we collect the information you voluntarily provide, such as your name, email address, phone number, and details about your business. We do not collect data through cookies, trackers, or analytics tools beyond basic server logs.
           </p>
 
           <h2>How We Use It</h2>

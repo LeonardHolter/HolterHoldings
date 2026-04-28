@@ -9,8 +9,8 @@ export const metadata: Metadata = {
 };
 
 const team = [
-  { img: "/brett_maxam.jpeg", name: "Brett Maxam", role: "Executive Advisor" },
-  { img: "/leonard_holter.jpeg", name: "Leonard Holter", role: "Managing Partner" },
+  { img: "/brett_maxam.jpeg", name: "Brett Maxam", role: "Partner" },
+  { img: "/leonard_holter.jpeg", name: "Leonard Holter", role: "Partner" },
   { img: "/john_colman.jpeg", name: "John Colman", role: "Senior Analyst" },
   { img: "/tommaso_mortara.jpeg", name: "Tommaso Mortara", role: "Analyst" },
 ];

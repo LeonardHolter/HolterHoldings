@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 
 const team = [
   { img: "/brett_maxam.jpeg", name: "Brett Maxam", role: "Partner" },
-  { img: "/leonard_holter.jpeg", name: "Leonard Holter", role: "Partner" },
+  { img: "/leonard_holter.jpeg", name: "Leonard Holter", role: "Managing Partner" },
   { img: "/john_colman.jpeg", name: "John Colman", role: "Senior Analyst" },
   { img: "/tommaso_mortara.jpeg", name: "Tommaso Mortara", role: "Analyst" },
 ];
@@ -23,7 +23,7 @@ export default function AboutUsPage() {
 
       <section className="hero">
         <h1>
-          The people behind <em>Holter Holdings.</em>
+          The people behind <em>our success.</em>
         </h1>
         <p>
           Our team has spent decades acquiring, operating, and scaling service companies. We understand what makes

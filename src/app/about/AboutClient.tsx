@@ -171,6 +171,38 @@ export default function AboutClient() {
           </div>
         </section>
 
+        <section className="section" style={{ borderTop: '1px solid var(--border)' }}>
+          <div style={{ maxWidth: 1100, margin: '0 auto' }}>
+            <p className="section-label">Our Companies</p>
+            <h2 className="section-h2" style={{ marginBottom: 52 }}>
+              What we own
+            </h2>
+            <div className="companies-grid">
+
+              <a
+                href="https://morcrete.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="company-card"
+              >
+                <Image src="/Morcrete.webp" alt="Morcrete Concrete Flatwork" width={240} height={80} style={{ objectFit: 'contain', objectPosition: 'left' }} />
+                <div className="company-desc">Concrete Flatwork - Driveways, Patios, Walkways</div>
+              </a>
+
+              <a
+                href="https://powerwash-nyc.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="company-card"
+              >
+                <Image src="/powerwash-nyc_logo.avif" alt="Powerwash NYC" width={80} height={80} style={{ objectFit: 'contain', objectPosition: 'left' }} />
+                <div className="company-desc">Professional Power Washing Services - New York City</div>
+              </a>
+
+            </div>
+          </div>
+        </section>
+
         <div className="cta-section">
           <h2 className="cta-h2">
             Ready to skip

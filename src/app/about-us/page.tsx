@@ -100,6 +100,46 @@ export default function AboutUsPage() {
         </div>
       </section>
 
+      <section className="section" style={{ borderTop: "1px solid var(--rule)" }}>
+        <p className="section-label">Related Companies</p>
+        <div className="companies-grid">
+
+          <div className="company-card">
+            <div className="company-logo-wrap">
+              <Image
+                src="/Morcrete.webp"
+                alt="Morcrete Concrete Flatwork"
+                width={220}
+                height={72}
+                style={{ objectFit: "contain", objectPosition: "left center", mixBlendMode: "multiply" }}
+              />
+            </div>
+            <div className="company-desc">Concrete Flatwork - Driveways, Patios, Walkways</div>
+          </div>
+
+          <div className="company-card">
+            <div className="company-logo-wrap">
+              <Image
+                src="/powerwash-nyc_logo.avif"
+                alt="Powerwash NYC"
+                width={88}
+                height={88}
+                style={{ objectFit: "contain", flexShrink: 0 }}
+              />
+              <span style={{
+                fontFamily: "var(--sans)",
+                fontWeight: 700,
+                fontSize: 22,
+                color: "var(--ink)",
+                letterSpacing: "-0.01em",
+              }}>powerwash-nyc</span>
+            </div>
+            <div className="company-desc">Professional Power Washing Services - New York City</div>
+          </div>
+
+        </div>
+      </section>
+
       <footer className="foot">
         <div className="foot-legal">
           <span className="foot-contact">

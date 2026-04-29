@@ -11,7 +11,7 @@ const team = [
   { img: "/brett_maxam.jpeg", name: "Brett Maxam", role: "Partner" },
   { img: "/leonard_holter.jpeg", name: "Leonard Holter", role: "Managing Partner" },
   { img: "/john_colman.jpeg", name: "John Colman", role: "Senior Analyst" },
-  { img: "/tommaso_mortara.jpeg", name: "Tommaso Mortara", role: "Analyst" },
+  { img: "/tommaso_mortara.jpeg", name: "Tommaso Mortara", role: "Senior Analyst" },
 ];
 
 export default function AboutUsPage() {

@@ -102,7 +102,7 @@ export default function AboutUsPage() {
       </section>
 
       <section className="section" style={{ borderTop: "1px solid var(--rule)" }}>
-        <p className="section-label">Related Companies</p>
+        <p className="section-label">Companies We Own</p>
         <div className="companies-grid">
 
           <div className="company-card">
@@ -136,6 +136,19 @@ export default function AboutUsPage() {
               }}>powerwash-nyc</span>
             </div>
             <div className="company-desc">Professional Power Washing Services - New York City</div>
+          </div>
+
+          <div className="company-card">
+            <div className="company-logo-wrap">
+              <Image
+                src="/holter-bygg-logo.png"
+                alt="Holter Bygg"
+                width={76}
+                height={88}
+                style={{ objectFit: "contain", objectPosition: "left center" }}
+              />
+            </div>
+            <div className="company-desc">General Contracting & Renovation - Oslo, Norway</div>
           </div>
 
         </div>

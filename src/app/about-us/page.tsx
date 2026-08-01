@@ -121,10 +121,10 @@ export default function AboutUsPage() {
           <div className="company-card">
             <div className="company-logo-wrap">
               <Image
-                src="/powerwash-nyc_logo.avif"
-                alt="Powerwash NYC"
-                width={88}
-                height={88}
+                src="/kiconsult-logo.png"
+                alt="KI Consult"
+                width={72}
+                height={72}
                 style={{ objectFit: "contain", flexShrink: 0 }}
               />
               <span style={{
@@ -133,9 +133,11 @@ export default function AboutUsPage() {
                 fontSize: 22,
                 color: "var(--ink)",
                 letterSpacing: "-0.01em",
-              }}>powerwash-nyc</span>
+              }}>
+                KI Consult<span style={{ color: "var(--green-hover)" }}>.no</span>
+              </span>
             </div>
-            <div className="company-desc">Professional Power Washing Services - New York City</div>
+            <div className="company-desc">AI Receptionist for Phone, Chat & Web - Oslo, Norway</div>
           </div>
 
           <div className="company-card">

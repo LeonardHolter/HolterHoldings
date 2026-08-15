@@ -24,7 +24,6 @@ const team = [
   { img: '/leonard-photo.png', name: 'Leonard Holter', role: 'Chairman' },
   { img: '/john-colman.png', name: 'John Colman', role: 'Senior Analyst' },
   { img: '/tommaso-mortara.png', name: 'Tommaso Mortara', role: 'Senior Analyst' },
-  { img: '/massi-benachour.jpg', name: 'Massi Benachour', role: 'Analyst' },
 ];
 
 export default function AboutClient() {

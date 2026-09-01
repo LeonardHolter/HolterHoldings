@@ -682,6 +682,15 @@ a { color: inherit; text-decoration: none; }
   object-fit: cover;
 }
 
+.home-hero-tint {
+  position: absolute;
+  inset: 0;
+  background: var(--green);
+  opacity: 0.18;
+  mix-blend-mode: color;
+  pointer-events: none;
+}
+
 .home-hero-scrim {
   position: absolute;
   inset: 0;

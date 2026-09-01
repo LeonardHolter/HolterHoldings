@@ -6,8 +6,11 @@ import { GeneratorMark } from '@/components/Icons';
 /** Set to false to skip the generator boot sequence. */
 const INTRO_ENABLED = true;
 
-/** The hero video plays once and freezes on this frame. */
-const HERO_STOP_AT = 4.5;
+/** The hero video loops this first slice of the clip, forever. */
+const HERO_LOOP_END = 4.5;
+
+/** Slowed down a touch from real time. */
+const HERO_RATE = 0.8;
 
 type Phase = 'idle' | 'starting' | 'running' | 'settle';
 type Morph = { dx: number; dy: number; scale: number };
@@ -62,18 +65,29 @@ export default function HomeClient() {
     const video = videoRef.current;
     if (!video) return;
 
+    video.defaultPlaybackRate = HERO_RATE;
+    video.playbackRate = HERO_RATE;
+
     let frame = 0;
     const check = () => {
-      if (video.currentTime >= HERO_STOP_AT) {
-        video.pause();
-        video.currentTime = HERO_STOP_AT;
-        return;
+      // Loop the opening slice rather than the whole clip.
+      if (video.currentTime >= HERO_LOOP_END) {
+        video.currentTime = 0;
       }
       frame = requestAnimationFrame(check);
     };
     frame = requestAnimationFrame(check);
 
-    return () => cancelAnimationFrame(frame);
+    // Playback rate resets across a source load in some browsers.
+    const onLoaded = () => {
+      video.playbackRate = HERO_RATE;
+    };
+    video.addEventListener('loadedmetadata', onLoaded);
+
+    return () => {
+      cancelAnimationFrame(frame);
+      video.removeEventListener('loadedmetadata', onLoaded);
+    };
   }, []);
 
   const starting = phase === 'starting';
@@ -150,6 +164,7 @@ export default function HomeClient() {
               preload="auto"
               aria-hidden="true"
             />
+            <div className="home-hero-tint" />
             <div className="home-hero-scrim" />
             <div className="home-hero-copy">
               <h1>

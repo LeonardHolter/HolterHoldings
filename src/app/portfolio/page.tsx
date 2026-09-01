@@ -28,6 +28,13 @@ export default function PortfolioPage() {
         <h1 className="doc-title">Portfolio</h1>
         <p className="doc-date">Our companies</p>
 
+        <div className="doc-body">
+          <p>
+            We acquire generator businesses only - standby, prime, and portable power. The companies
+            below are what we already own and operate.
+          </p>
+        </div>
+
         <div className="portfolio-list">
           {companies.map((co) => (
             <a

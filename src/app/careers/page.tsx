@@ -4,7 +4,7 @@ import CareersClient from "./CareersClient";
 export const metadata: Metadata = {
   title: "Careers | Holter Holdings - Private Equity Intern",
   description:
-    "Join Holter Holdings as a Private Equity Intern. Support our deal team across origination, diligence, and portfolio management in a lean, high-ownership environment.",
+    "Join Holter Holdings as a Private Equity Intern. Support our deal team across origination, diligence, and portfolio management as we acquire generator businesses in a lean, high-ownership environment.",
   openGraph: {
     title: "Careers | Holter Holdings - Private Equity Intern",
     description:

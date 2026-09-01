@@ -13,7 +13,7 @@ export default function ContactPage() {
         </div>
 
         <h1 className="doc-title">Contact</h1>
-        <p className="doc-date">The fastest way to reach us.</p>
+        <p className="doc-date">Own a generator business? This is the fastest way to reach us.</p>
 
         <div className="doc-body">
           <p>

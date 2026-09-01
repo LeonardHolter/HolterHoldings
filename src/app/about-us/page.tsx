@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "About Us | Holter Holdings",
-  description: "Meet the team behind Holter Holdings.",
+  description: "Meet the team behind Holter Holdings, the buyer that acquires generator companies and holds them forever.",
 };
 
 const team = [
@@ -26,8 +26,9 @@ export default function AboutUsPage() {
           The people behind <em>our success.</em>
         </h1>
         <p>
-          Our team has spent decades acquiring, operating, and scaling service companies. We understand what makes
-          great service businesses tick because we&apos;ve built and run them ourselves.
+          Our team has spent decades acquiring, operating, and scaling service companies. Today all of that goes
+          into a single industry: generators. We understand what makes a standby power business tick - the service
+          contracts, the techs, the dealer agreement - because we&apos;ve built and run companies like it ourselves.
         </p>
       </section>
 
@@ -101,7 +102,19 @@ export default function AboutUsPage() {
       </section>
 
       <section className="section" style={{ borderTop: "1px solid var(--rule)" }}>
-        <p className="section-label">Companies We Own</p>
+        <p className="section-label" style={{ marginBottom: 12 }}>Companies We Own</p>
+        <p
+          style={{
+            fontFamily: "var(--sans)",
+            fontSize: 13,
+            lineHeight: 1.6,
+            color: "var(--ink3)",
+            maxWidth: 620,
+            marginBottom: 32,
+          }}
+        >
+          Our acquisitions today are generator businesses only. These are the companies already in the family.
+        </p>
         <div className="companies-grid">
 
           <div className="company-card">

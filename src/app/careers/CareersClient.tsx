@@ -31,8 +31,9 @@ export default function CareersClient() {
 
           <h3 className="careers-h3">About the role</h3>
           <p className="careers-p">
-            We&apos;re a lean, founder-led holding company that buys and operates great service businesses. We move
-            fast, speak plainly, and do real work - no make-work projects, no 200-slide decks nobody reads.
+            We&apos;re a lean, founder-led holding company that buys and operates generator businesses - standby,
+            prime, and portable power. We move fast, speak plainly, and do real work - no make-work projects, no
+            200-slide decks nobody reads.
           </p>
           <p className="careers-p">
             As a Private Equity Intern at Holter Holdings, you&apos;ll work directly with our deal team across
@@ -42,7 +43,7 @@ export default function CareersClient() {
 
           <h3 className="careers-h3">What you&apos;ll do</h3>
           <ul className="careers-list">
-            <li>Support deal origination: research industries, identify acquisition targets, and reach out to founders</li>
+            <li>Support deal origination: map the generator dealer and service market, identify targets, and reach out to founders</li>
             <li>Build financial models and analyze business performance across potential acquisitions</li>
             <li>Assist with due diligence - reviewing financials, customer data, and operational metrics</li>
             <li>Prepare investment memos and summaries for leadership review</li>
@@ -56,7 +57,7 @@ export default function CareersClient() {
             <li>Strong analytical skills and comfort working with financial statements</li>
             <li>Self-starter who can take direction and run with it - we don&apos;t micromanage</li>
             <li>Clear, direct communicator - in writing and in meetings</li>
-            <li>Genuine interest in small business, acquisition entrepreneurship, or the trades</li>
+            <li>Genuine interest in small business, acquisition entrepreneurship, or the power and trades industries</li>
             <li>Bonus: experience in a small business or startup environment</li>
           </ul>
 

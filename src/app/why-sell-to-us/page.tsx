@@ -2,24 +2,30 @@ import Link from 'next/link';
 
 export const metadata = {
   title: 'Why Sell to Us - Holter Holdings',
+  description:
+    'We buy generator companies and hold them forever. A fair offer in a week, your techs and dealer agreement intact, and no plan to ever sell.',
 };
 
 const principles = [
   {
+    title: 'We only buy generator companies',
+    body: "You will not have to explain what a transfer switch is, why a PM contract is worth more than an install, or what happens to your margins when the storm season is quiet. We buy in one industry, so diligence is a conversation between people who already speak the same language.",
+  },
+  {
     title: 'We never sell',
-    body: "Once we buy a company, it's home. No flip, no recap, no exit. We commit to your business for the long haul.",
+    body: "Once we buy a company, it is home. No flip, no recap, no exit. Your name stays on the trucks and your customers keep calling the same number.",
   },
   {
-    title: 'Simple businesses we understand',
-    body: "Buffett's first rule: only buy what you understand. We stick to durable service businesses with clear customers and steady cash flow.",
-  },
-  {
-    title: 'Honest, capable people',
-    body: 'We back leaders we trust. Honesty matters more to us than credentials. We believe great businesses are run by people who keep their word.',
+    title: 'Your techs and your dealership stay',
+    body: "We do not clean house after closing. Your service techs, your dispatcher, and your factory dealer agreement are the business - cutting them would destroy the thing we just paid for.",
   },
   {
     title: 'A fair price, fast',
     body: "We don't grind. We make a fair offer quickly, in plain English, and we stick to it. What we agree on is what shows up in the documents.",
+  },
+  {
+    title: 'Honest, capable people',
+    body: 'We back leaders we trust. Honesty matters more to us than credentials. We believe great businesses are run by people who keep their word.',
   },
   {
     title: 'Hands-off ownership',
@@ -36,7 +42,7 @@ export default function WhySellToUsPage() {
         </div>
 
         <h1 className="doc-title">Why Sell to Us</h1>
-        <p className="doc-date">We buy great companies and hold them forever.</p>
+        <p className="doc-date">We buy generator companies and hold them forever.</p>
 
         <div className="doc-body">
           <p>
@@ -45,8 +51,13 @@ export default function WhySellToUsPage() {
             no plan to ever sell it again.
           </p>
           <p>
-            We borrow our approach from Warren Buffett: buy simple businesses, back honest people,
-            pay a fair price quickly, and leave them alone afterward.
+            The difference between us and a generalist buyer is simple: generators are all we do.
+            We are not learning your industry on your time, and we are not pricing in the risk of
+            what we do not understand.
+          </p>
+          <p>
+            We borrow the rest of our approach from Warren Buffett: buy simple businesses, back
+            honest people, pay a fair price quickly, and leave them alone afterward.
           </p>
         </div>
 
@@ -64,7 +75,7 @@ export default function WhySellToUsPage() {
 
         <div style={{ marginTop: 48, paddingTop: 40, borderTop: '1px solid var(--rule)' }}>
           <p style={{ fontFamily: 'var(--sans)', fontSize: 13, color: 'var(--ink3)', marginBottom: 16 }}>
-            Thinking about selling?
+            Thinking about selling your generator business?
           </p>
           <a href="mailto:Leonard@holterholdings.com" className="cta-link">
             Leonard@holterholdings.com →

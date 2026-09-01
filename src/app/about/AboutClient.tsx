@@ -52,7 +52,8 @@ export default function AboutClient() {
             <p>
               We spent years building and running businesses in the trades and service industries. Along the way, we
               learned what actually makes these companies tick - the routes, the technicians, the recurring customers,
-              the local trust that takes a decade to build.
+              the local trust that takes a decade to build. Generator companies have all of it in one place, which is
+              why they are now the only kind of business we buy.
             </p>
             <p>
               Every once in a while, we&apos;d get an email from a private equity firm. Their emails were confusing.
@@ -98,8 +99,9 @@ export default function AboutClient() {
               could have sold to.
             </p>
             <p>
-              We thought about all the things we hated about selling our company and worked backwards, then used our
-              capital to buy wonderful businesses from founders like us.
+              We thought about all the things we hated about selling our company and worked backwards, then pointed our
+              capital at one industry we understand cold: generators. Dealers, installers, service shops, and rental
+              fleets, bought from founders like us.
             </p>
             <p>
               It turns out that selling your company doesn&apos;t need to be so complicated and miserable. We make

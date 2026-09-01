@@ -35,11 +35,11 @@ const jetbrainsMono = JetBrains_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://holterholdings.com"),
-  title: "Holter Holdings - Buying Good Businesses",
+  title: "Holter Holdings - We Buy Generator Companies",
   description:
-    "Permanent capital. Plain English. A fair offer in a week, a clean close in a month, and a written promise to leave a good business alone.",
+    "We buy generator companies and hold them forever. Standby, prime, and portable power - dealers, installers, service shops, and rental fleets with $500K to $3M in annual profit. A fair offer in a week and a clean close in a month.",
   keywords:
-    "buy great business, sell your business, business acquisition, home services acquisition, small business buyer, sell my business, Holter Holdings, Leonard Holter, permanent capital, founder exit",
+    "sell my generator business, generator company for sale, standby generator dealer acquisition, Generac dealer buyer, generator service company acquisition, backup power business buyer, genset service acquisition, generator rental fleet buyer, Holter Holdings, Leonard Holter, permanent capital, founder exit",
   authors: [{ name: "Holter Holdings" }],
   robots: "index, follow",
   icons: {
@@ -55,7 +55,7 @@ export const metadata: Metadata = {
   },
   manifest: "/site.webmanifest",
   openGraph: {
-    title: "Holter Holdings - Buying Good Businesses",
+    title: "Holter Holdings - We Buy Generator Companies",
     description:
       "Permanent capital. Plain English. A fair offer in a week, a clean close in a month, and a written promise to leave a good business alone.",
     url: "https://holterholdings.com",

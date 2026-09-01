@@ -34,7 +34,7 @@ export default function Nav() {
           <Link href="/about" className={linkClass('/about')}>About</Link>
           <Link href="/careers" className={linkClass('/careers')}>Careers</Link>
           <a href="mailto:Leonard@holterholdings.com" className="nav-cta">
-            Get in touch
+            Sell your business
           </a>
         </div>
         <button
@@ -57,7 +57,7 @@ export default function Nav() {
         <Link href="/">Home</Link>
         <Link href="/about">About</Link>
         <Link href="/careers">Careers</Link>
-        <a href="mailto:Leonard@holterholdings.com">Get in touch</a>
+        <a href="mailto:Leonard@holterholdings.com">Sell your business</a>
       </div>
     </>
   );

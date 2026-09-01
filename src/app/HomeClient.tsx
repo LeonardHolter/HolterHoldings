@@ -6,6 +6,9 @@ import { GeneratorMark } from '@/components/Icons';
 /** Set to false to skip the generator boot sequence. */
 const INTRO_ENABLED = true;
 
+/** The hero video plays once and freezes on this frame. */
+const HERO_STOP_AT = 4.5;
+
 type Phase = 'idle' | 'starting' | 'running' | 'settle';
 type Morph = { dx: number; dy: number; scale: number };
 
@@ -23,6 +26,7 @@ export default function HomeClient() {
 
   const genRef = useRef<HTMLDivElement>(null);
   const targetRef = useRef<SVGSVGElement>(null);
+  const videoRef = useRef<HTMLVideoElement>(null);
 
   useEffect(() => {
     if (!INTRO_ENABLED) return;
@@ -52,6 +56,24 @@ export default function HomeClient() {
     ];
 
     return () => timers.forEach(clearTimeout);
+  }, []);
+
+  useEffect(() => {
+    const video = videoRef.current;
+    if (!video) return;
+
+    let frame = 0;
+    const check = () => {
+      if (video.currentTime >= HERO_STOP_AT) {
+        video.pause();
+        video.currentTime = HERO_STOP_AT;
+        return;
+      }
+      frame = requestAnimationFrame(check);
+    };
+    frame = requestAnimationFrame(check);
+
+    return () => cancelAnimationFrame(frame);
   }, []);
 
   const starting = phase === 'starting';
@@ -117,11 +139,28 @@ export default function HomeClient() {
       <div className="home" style={{ opacity: showOverlay && !exiting ? 0 : 1 }}>
 
         <section className="home-hero">
-          <h1>
-            We buy generator companies, and hold them <em>forever.</em>
-          </h1>
-          <p>We never sell and we never change something that is working.</p>
+          <div className="home-hero-stage">
+            <video
+              ref={videoRef}
+              className="home-hero-video"
+              src="/hero.mp4"
+              autoPlay
+              muted
+              playsInline
+              preload="auto"
+              aria-hidden="true"
+            />
+            <div className="home-hero-scrim" />
+            <div className="home-hero-copy">
+              <h1>
+                We buy generator companies, and hold them <em>forever.</em>
+              </h1>
+              <p>We never sell and we never change something that is working.</p>
+            </div>
+          </div>
         </section>
+
+        <div className="home-hero-gap" />
 
         <section className="gen-band">
           <div className="gen-rule-row">

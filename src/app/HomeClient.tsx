@@ -12,6 +12,9 @@ const HERO_LOOP_END = 4.5;
 /** Slowed down a touch from real time. */
 const HERO_RATE = 0.8;
 
+/** After this many loops, ease the page down to the content - unless the reader already moved. */
+const HERO_LOOPS_BEFORE_SCROLL = 2;
+
 type Phase = 'idle' | 'starting' | 'running' | 'settle';
 type Morph = { dx: number; dy: number; scale: number };
 
@@ -30,6 +33,10 @@ export default function HomeClient() {
   const genRef = useRef<HTMLDivElement>(null);
   const targetRef = useRef<SVGSVGElement>(null);
   const videoRef = useRef<HTMLVideoElement>(null);
+  const stageRef = useRef<HTMLDivElement>(null);
+  const loopsRef = useRef(0);
+  const readerMovedRef = useRef(false);
+  const autoScrolledRef = useRef(false);
 
   useEffect(() => {
     if (!INTRO_ENABLED) return;
@@ -68,11 +75,26 @@ export default function HomeClient() {
     video.defaultPlaybackRate = HERO_RATE;
     video.playbackRate = HERO_RATE;
 
+    const autoScroll = () => {
+      if (autoScrolledRef.current || readerMovedRef.current) return;
+      // Someone who is already down the page gets left alone.
+      if (window.scrollY > 4) return;
+      if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+      autoScrolledRef.current = true;
+      window.scrollTo({
+        top: stageRef.current?.getBoundingClientRect().height ?? window.innerHeight,
+        behavior: 'smooth',
+      });
+    };
+
     let frame = 0;
     const check = () => {
       // Loop the opening slice rather than the whole clip.
       if (video.currentTime >= HERO_LOOP_END) {
         video.currentTime = 0;
+        loopsRef.current += 1;
+        if (loopsRef.current >= HERO_LOOPS_BEFORE_SCROLL) autoScroll();
       }
       frame = requestAnimationFrame(check);
     };
@@ -87,6 +109,28 @@ export default function HomeClient() {
     return () => {
       cancelAnimationFrame(frame);
       video.removeEventListener('loadedmetadata', onLoaded);
+    };
+  }, []);
+
+  useEffect(() => {
+    const mark = () => {
+      readerMovedRef.current = true;
+    };
+    const scrollKeys = new Set([
+      'ArrowDown', 'ArrowUp', 'PageDown', 'PageUp', 'Home', 'End', ' ', 'Spacebar',
+    ]);
+    const onKeyDown = (e: KeyboardEvent) => {
+      if (scrollKeys.has(e.key)) mark();
+    };
+
+    window.addEventListener('wheel', mark, { passive: true });
+    window.addEventListener('touchmove', mark, { passive: true });
+    window.addEventListener('keydown', onKeyDown);
+
+    return () => {
+      window.removeEventListener('wheel', mark);
+      window.removeEventListener('touchmove', mark);
+      window.removeEventListener('keydown', onKeyDown);
     };
   }, []);
 
@@ -153,7 +197,7 @@ export default function HomeClient() {
       <div className="home" style={{ opacity: showOverlay && !exiting ? 0 : 1 }}>
 
         <section className="home-hero">
-          <div className="home-hero-stage">
+          <div className="home-hero-stage" ref={stageRef}>
             <video
               ref={videoRef}
               className="home-hero-video"

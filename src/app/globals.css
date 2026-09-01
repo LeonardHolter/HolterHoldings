@@ -413,7 +413,7 @@ a { color: inherit; text-decoration: none; }
 .criteria-list {
   display: flex;
   flex-direction: column;
-  margin-top: 48px;
+  margin-top: 20px;
   border-top: 1px solid var(--rule);
 }
 
@@ -430,7 +430,7 @@ a { color: inherit; text-decoration: none; }
   font-size: 11px;
   color: var(--ink3);
   letter-spacing: 0.06em;
-  padding-top: 4px;
+  padding-top: 6px;
 }
 
 .criteria-row-content {
@@ -440,11 +440,11 @@ a { color: inherit; text-decoration: none; }
 }
 
 .criteria-row-title {
-  font-family: var(--serif);
-  font-size: 19px;
+  font-family: var(--cormorant);
+  font-size: 24px;
   font-weight: 500;
   color: var(--ink);
-  line-height: 1.3;
+  line-height: 1.25;
 }
 
 .criteria-row-body {
@@ -792,6 +792,104 @@ a { color: inherit; text-decoration: none; }
   .gen-pulse { animation: none !important; }
 }
 
+/* ── DESIGNED PAGE SHELL ─────────────────────────────────── */
+.pg {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+.pg-back {
+  padding: 44px 0 0;
+}
+
+.pg-back a {
+  font-family: var(--mono);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink3);
+  transition: color 0.2s;
+}
+
+.pg-back a:hover { color: var(--ink); }
+
+.pg-head {
+  padding: 80px 0 60px;
+  text-align: center;
+}
+
+.pg-head h1 {
+  font-family: var(--cormorant);
+  font-size: clamp(40px, 5.2vw, 64px);
+  font-weight: 400;
+  line-height: 1.05;
+  letter-spacing: -0.014em;
+  color: var(--ink);
+  margin: 0 auto 18px;
+}
+
+.pg-head h1 em { font-style: italic; }
+
+.pg-stamp {
+  font-family: var(--mono);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink3);
+}
+
+/* compact generator band for interior pages */
+.gen-band.sm { padding: 0 0 60px; }
+
+.gen-band.sm .gen-rule-row {
+  max-width: 520px;
+  margin-bottom: 0;
+}
+
+.pg-lede {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  font-size: 18px;
+  line-height: 1.7;
+  color: var(--ink2);
+  max-width: 640px;
+  margin: 0 auto;
+  padding-bottom: 40px;
+}
+
+.pg-close {
+  padding: 56px 0 0;
+  max-width: 640px;
+  margin: 0 auto;
+  font-size: 18px;
+  line-height: 1.7;
+  color: var(--ink2);
+}
+
+.pg-cta {
+  margin-top: 48px;
+  padding: 40px 0 90px;
+}
+
+.pg-cta-label {
+  font-family: var(--mono);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink3);
+  margin-bottom: 16px;
+}
+
+.pg-foot {
+  padding: 30px 0 56px;
+  border-top: 2px solid var(--rule);
+}
+
 /* ── RESPONSIVE ──────────────────────────────────────────── */
 @media (max-width: 760px) {
   .container { padding: 0 20px; }
@@ -809,4 +907,8 @@ a { color: inherit; text-decoration: none; }
   .home-index a { padding: 22px; }
   .home-index-title { font-size: 21px; }
   .home-foot { margin-top: 64px; }
+  .pg { padding: 0 20px; }
+  .pg-head { padding: 56px 0 48px; }
+  .pg-lede, .pg-close { font-size: 17px; }
+  .gen-band.sm { padding: 0 0 48px; }
 }

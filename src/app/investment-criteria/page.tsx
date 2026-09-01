@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { GeneratorMark } from '@/components/Icons';
 
 export const metadata = {
   title: 'Investment Criteria - Holter Holdings',
@@ -43,63 +44,101 @@ const criteria = [
 
 export default function InvestmentCriteriaPage() {
   return (
-    <div className="container">
-      <div className="doc-page" style={{ maxWidth: 720 }}>
-        <div className="doc-back">
-          <Link href="/">← Holter Holdings</Link>
-        </div>
-
-        <h1 className="doc-title">Investment Criteria</h1>
-        <p className="doc-date">Updated April 2026</p>
-
-        <div className="doc-body">
-          <p>
-            We buy generator businesses. Standby, prime, and portable power - the dealers,
-            installers, service shops, and rental fleets that keep the lights on. That is the
-            entire universe we shop in, and we are not looking to expand it.
-          </p>
-          <p>
-            Within that industry we follow one framework: buy a wonderful business at a fair price,
-            and hold it forever. That is Warren Buffett&apos;s thesis, and after decades of evidence
-            it remains the simplest and most durable approach to owning companies.
-          </p>
-          <p>
-            We are not financial engineers. We don&apos;t buy businesses to cut costs, load them
-            with debt, and sell them three years later at a profit. We buy generator companies
-            because we understand them and want to own them for a very long time. That changes what
-            we look for.
-          </p>
-        </div>
-
-        <div className="criteria-list">
-          {criteria.map((item, i) => (
-            <div key={i} className="criteria-row">
-              <div className="criteria-row-num">{String(i + 1).padStart(2, '0')}</div>
-              <div className="criteria-row-content">
-                <div className="criteria-row-title">{item.title}</div>
-                <p className="criteria-row-body">{item.body}</p>
-              </div>
-            </div>
-          ))}
-        </div>
-
-        <div className="doc-body" style={{ marginTop: 64 }}>
-          <p>
-            We don&apos;t require every box to be checked. A generator business that scores well on
-            five or six of these and has a clear reason for the gaps is worth a conversation. What
-            we won&apos;t compromise on: the industry, honesty, and a real track record.
-          </p>
-        </div>
-
-        <div style={{ marginTop: 48, paddingTop: 40, borderTop: '1px solid var(--rule)' }}>
-          <p style={{ fontFamily: 'var(--sans)', fontSize: 13, color: 'var(--ink3)', marginBottom: 16 }}>
-            Own a generator business?
-          </p>
-          <a href="mailto:Leonard@holterholdings.com" className="cta-link">
-            Leonard@holterholdings.com →
-          </a>
-        </div>
+    <div className="pg">
+      <div className="pg-back">
+        <Link href="/">&larr; Holter Holdings</Link>
       </div>
+
+      <section className="pg-head">
+        <h1>
+          Investment <em>Criteria</em>
+        </h1>
+        <p className="pg-stamp">Updated April 2026</p>
+      </section>
+
+      <section className="gen-band sm">
+        <div className="gen-rule-row">
+          <span className="gen-rule">
+            <span
+              className="gen-pulse"
+              style={{ left: '100%', animation: 'wire-flow-left 1.7s linear infinite' }}
+            />
+          </span>
+          <GeneratorMark
+            className="gen-mark"
+            size={40}
+            lightStyle={{ animation: 'dot-pulse 2.4s ease-in-out infinite' }}
+          />
+          <span className="gen-rule">
+            <span
+              className="gen-pulse"
+              style={{ left: -22, animation: 'wire-flow-right 1.7s linear infinite' }}
+            />
+          </span>
+        </div>
+      </section>
+
+      <section className="pg-lede">
+        <p>
+          We buy generator businesses. Standby, prime, and portable power - the dealers,
+          installers, service shops, and rental fleets that keep the lights on. That is the
+          entire universe we shop in, and we are not looking to expand it.
+        </p>
+        <p>
+          Within that industry we follow one framework: buy a wonderful business at a fair price,
+          and hold it forever. That is Warren Buffett&apos;s thesis, and after decades of evidence
+          it remains the simplest and most durable approach to owning companies.
+        </p>
+        <p>
+          We are not financial engineers. We don&apos;t buy businesses to cut costs, load them
+          with debt, and sell them three years later at a profit. We buy generator companies
+          because we understand them and want to own them for a very long time. That changes what
+          we look for.
+        </p>
+      </section>
+
+      <div className="criteria-list">
+        {criteria.map((item, i) => (
+          <div key={i} className="criteria-row">
+            <div className="criteria-row-num">{String(i + 1).padStart(2, '0')}</div>
+            <div className="criteria-row-content">
+              <div className="criteria-row-title">{item.title}</div>
+              <p className="criteria-row-body">{item.body}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <section className="pg-close">
+        <p>
+          We don&apos;t require every box to be checked. A generator business that scores well on
+          five or six of these and has a clear reason for the gaps is worth a conversation. What
+          we won&apos;t compromise on: the industry, honesty, and a real track record.
+        </p>
+      </section>
+
+      <section className="pg-cta">
+        <p className="pg-cta-label">Own a generator business?</p>
+        <a href="mailto:Leonard@holterholdings.com" className="cta-link">
+          Leonard@holterholdings.com &rarr;
+        </a>
+      </section>
+
+      <footer className="pg-foot">
+        <div className="foot-legal">
+          <span className="foot-contact">
+            Contact: <a href="tel:+19296261703">929 626 1703</a>
+            &nbsp;&middot;&nbsp; New York, NY 10027
+          </span>
+          <span style={{ display: 'flex', gap: 8 }}>
+            <a href="/contact">Contact</a>
+            <span style={{ color: 'var(--ink3)' }}>&middot;</span>
+            <a href="/legal">Legal Disclaimer</a>
+            <span style={{ color: 'var(--ink3)' }}>&middot;</span>
+            <a href="/privacy">Privacy</a>
+          </span>
+        </div>
+      </footer>
     </div>
   );
 }

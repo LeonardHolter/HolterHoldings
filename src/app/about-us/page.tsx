@@ -18,8 +18,8 @@ export default function AboutUsPage() {
       <section className="hero">
         <h1>Team</h1>
         <p>
-          We have spent years operating service businesses. We are not the ones who run the
-          companies we buy. Our job is to preserve their legacy for good.
+          We have spent years operating service businesses. Our job is to preserve their legacy for
+          good.
         </p>
       </section>
 

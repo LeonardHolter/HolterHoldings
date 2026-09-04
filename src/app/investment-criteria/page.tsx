@@ -58,23 +58,9 @@ export default function InvestmentCriteriaPage() {
 
       <section className="gen-band sm">
         <div className="gen-rule-row">
-          <span className="gen-rule">
-            <span
-              className="gen-pulse"
-              style={{ left: '100%', animation: 'wire-flow-left 1.7s linear infinite' }}
-            />
-          </span>
-          <GeneratorMark
-            className="gen-mark"
-            size={40}
-            lightStyle={{ animation: 'dot-pulse 2.4s ease-in-out infinite' }}
-          />
-          <span className="gen-rule">
-            <span
-              className="gen-pulse"
-              style={{ left: -22, animation: 'wire-flow-right 1.7s linear infinite' }}
-            />
-          </span>
+          <span className="gen-rule" />
+          <GeneratorMark className="gen-mark" size={40} />
+          <span className="gen-rule" />
         </div>
       </section>
 

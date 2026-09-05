@@ -25,11 +25,6 @@ export default function AboutUsPage() {
 
       <section className="team-body">
         <p>
-          We started as operators, not investors. We have built and run companies in the trades, in
-          New York and in Oslo, and we have sold a business to a buyer who changed the deal after
-          the handshake. That is where our judgment comes from.
-        </p>
-        <p>
           We have never sold a company. Not one. When we buy a business it is not a position we are
           waiting to exit. There is no fund with a clock on it and no debt loaded onto the company
           after closing.
@@ -37,13 +32,6 @@ export default function AboutUsPage() {
         <p>
           We would rather buy from an honest owner with messy books than a polished one with clean
           ones. Books can be cleaned up. Character cannot.
-        </p>
-        <p>
-          Leonard studied computer science at Columbia University. We are not going to turn your
-          shop into a software company. But most service businesses run on a phone, a whiteboard,
-          and one person&apos;s memory, and the back office is usually where the owner ran out of
-          time. Scheduling, dispatch, invoicing, renewals on service contracts. We know how to build
-          that properly and quietly, without touching the parts of the business that already work.
         </p>
         <p>
           We are a small team. When you write to us, a partner answers, not an associate. If you own
